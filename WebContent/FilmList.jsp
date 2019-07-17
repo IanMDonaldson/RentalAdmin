@@ -8,10 +8,10 @@
 <title>Movie Rental Co. - List of Films</title>
 </head>
 <body>
-<h1>List of Films</h1>d
+<h1>List of Films</h1>
 <p>
 <c:forEach items="${FilmList}" var="current">
-	<a href="Film?action=getFilm&id=${current.id }">${current.title }</a><br>
+	<a href="WebFilm?action=getFilm&id=${current.id}">${current.title}</a><br>
 </c:forEach>
 </p>
 </body>

@@ -45,6 +45,9 @@ public class WebCustomer extends HttpServlet {
 			case "getCustomer":
 				customerIDParam = request.getParameter("id");
 				customerID = Integer.parseInt(customerIDParam);
+				customer = customerDaoImpl.getCustomer(customerID);
+				request.getSession().setAttribute("customer", customer);
+				request.getRequestDispatcher("Customer.jsp").forward(request, response);
 				break;
 			case "updateCustomer":
 				break;

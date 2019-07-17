@@ -14,7 +14,7 @@ import com.iandonaldson.data.Film;
 /**
  * Servlet implementation class Film
  */
-@WebServlet("/Film")
+@WebServlet("/WebFilm")
 public class WebFilm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String filmIDParam;
