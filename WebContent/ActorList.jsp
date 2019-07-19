@@ -10,7 +10,7 @@
 <body>
 	<h1>List of Actors</h1>
 	<c:forEach items="${ActorList}" var="current">
-		<a href="Actor?action=getActor&id=${current.id}">${current.firstName},
+		<a href="WebActor?action=getActor&id=${current.id}">${current.firstName},
 			${current.lastName}</a>
 		<br>
 	</c:forEach>

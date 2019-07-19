@@ -14,7 +14,7 @@ import com.iandonaldson.data.Actor;
 /**
  * Servlet implementation class Actor
  */
-@WebServlet("/Actor")
+@WebServlet("/WebActor")
 public class WebActor extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        private String actorIDParam;
