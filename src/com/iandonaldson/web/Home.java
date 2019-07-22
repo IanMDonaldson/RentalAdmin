@@ -27,7 +27,14 @@ public class Home extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
-		request.getRequestDispatcher("Menu.jsp").forward(request, response);
+		if(request.getParameter("action") == null ) {
+			request.getRequestDispatcher("Menu.jsp").forward(request, response);
+		}
+		else {
+		switch (request.getParameter("action")) {
+
+		}
+		}
 	}
 
 	/**
