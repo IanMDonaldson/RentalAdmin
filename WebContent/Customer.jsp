@@ -18,7 +18,7 @@ Store ID: ${customer.storeID} <br>
 Last Update: $<fmt:formatDate pattern="MM/dd/yyyy" value="${customer.lastUpdate}"/><br>
 Customer Creation Date: $<fmt:formatDate pattern="MM/dd/yyyy" value="${customer.createDate}"/><br>
 </p>
-
+<a href="WebCustomer?action=getAllCustomers">Return to Customer List</a>
 <a href="Menu">Return to Main Menu</a>
 </body>
 </html>

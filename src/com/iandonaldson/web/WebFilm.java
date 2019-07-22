@@ -49,9 +49,22 @@ public class WebFilm extends HttpServlet {
 				filmID = Integer.parseInt(filmIDParam);
 				film = filmDaoImpl.getFilm(filmID);
 				request.getSession().setAttribute("film", film);
-				request.getSession().setAttribute("FilmList", film.getActorList());
+				request.getSession().setAttribute("id", film.getId());
+				request.getSession().setAttribute("actors", film.getActorList());
 				request.getRequestDispatcher("Film.jsp").forward(request, response);
 				break;
+			case "updateFilmGET":
+				filmIDParam = request.getParameter("id");
+				filmID = Integer.parseInt(filmIDParam);
+				film = filmDaoImpl.getFilm(filmID);
+				request.getSession().setAttribute("id", Integer.toString(filmID));
+				request.getSession().setAttribute("title", film.getTitle());
+				request.getSession().setAttribute("description", film.getDescription());
+				request.getSession().setAttribute("releaseDate", film.getReleaseDate().toString());
+				request.getSession().setAttribute("rentalRate", Double.toString(film.getRentalRate()));
+				request.getSession().setAttribute("replacementCost", Double.toString(film.getReplacementCost()));
+				request.getSession().setAttribute("length", Integer.toString(film.getLength()));
+				request.getRequestDispatcher("FilmUpdate.jsp").forward(request, response);
 			}
 		}
 	}
@@ -60,7 +73,25 @@ public class WebFilm extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
+		if (request.getParameter("action") == null ) {
+			request.getRequestDispatcher("Menu.jsp").forward(request,response);
+		}
+		else {
+			switch (request.getParameter("action")) {
+			case "updateFilm":
+				filmIDParam = request.getParameter("id");
+				filmID = Integer.parseInt(filmIDParam);
+				film = filmDaoImpl.getFilm(filmID);
+				film.setTitle(request.getParameter("title").toString());
+				film.setDescription(request.getParameter("description").toString());
+				if (filmDaoImpl.updateFilm(film)) {
+					request.getSession().setAttribute("film", film);//available as ${film} in jsp
+					request.getSession().setAttribute("actors", film.getActorList()); //avail as ${actors} in .jsp
+					request.getRequestDispatcher("Film.jsp");
+				}
+			}
+		}
 	}
 
 }

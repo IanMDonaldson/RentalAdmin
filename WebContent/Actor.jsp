@@ -17,5 +17,7 @@
 			${actor.title}<br>
 		</c:forEach>
 	</p>
+<a href="WebActor?action=getAllActors">Return to Actor List</a>
+<a href="Home">Return to Main Menu</a>
 </body>
 </html>
