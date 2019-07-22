@@ -16,7 +16,7 @@
 <body>
 <p>
 <h1>${film.title}</h1><br>
-<h3><a href="WebFilm?action=updateFilm&id=${film.id }">Update Movie</a></h3><!--        <<<<<< here  -->
+<h3><a href="WebFilm?action=updateFilm&id=${film.id}">Update Movie</a></h3><!--        <<<<<< here  -->
 <p>
 Description: ${film.description}<br><!--  attribute bullshit works everywhere else EXCEPT ^^^^^  -->
 Length: ${film.length} minutes<br>

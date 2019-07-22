@@ -88,7 +88,7 @@ public class WebFilm extends HttpServlet {
 				if (filmDaoImpl.updateFilm(film)) {
 					request.getSession().setAttribute("film", film);//available as ${film} in jsp
 					request.getSession().setAttribute("actors", film.getActorList()); //avail as ${actors} in .jsp
-					request.getRequestDispatcher("Film.jsp");
+					request.getRequestDispatcher("Film.jsp").forward(request, response);
 				}
 			}
 		}
