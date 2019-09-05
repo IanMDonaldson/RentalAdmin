@@ -9,7 +9,7 @@
 <body>
 	<h1>MENU</h1>
 	<ul>
-		<li><a href="WebFilm?action=getAllFilms">Films</a></li>
+		<li><a href="WebFilm?action=manageFilms">Films</a></li>
 		<li><a href="WebActor?action=getAllActors">Actors</a></li>
 		<li><a href="WebCustomer?action=getAllCustomers">Customers</a></li>
 		<li>Stores</li>
