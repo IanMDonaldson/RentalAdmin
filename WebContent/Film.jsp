@@ -10,13 +10,13 @@
 <style>
 	h1 {text-align: center;
 		font-style: bold;}
-	h3 {text-align: center;}
+	<!--h3 {text-align: center;}-->
 </style>
 </head>
 <body>
 <p>
 <h1>${film.title}</h1><br>
-<h3><a href="WebFilm?action=updateFilm&id=${film.id}">Update Movie</a></h3><!--        <<<<<< here  -->
+<a href="WebFilm?action=updateFilmGET&id=${film.id}">Update Movie</a><!--        <<<<<< here  -->
 <p>
 Description: ${film.description}<br><!--  attribute bullshit works everywhere else EXCEPT ^^^^^  -->
 Length: ${film.length} minutes<br>
