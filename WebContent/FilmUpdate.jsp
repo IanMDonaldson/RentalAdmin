@@ -26,7 +26,6 @@ input {
 <label for="title">Title:</label><input type="text" name="title" value="${title }"/><br>
 <label for="description">Description:</label> <input type="text" name ="description" value="${description}"/><br>
 <label for="rentalRate">Rental Rate:</label>  <input type="text" name="rentalRate" value="${rentalRate }"/><br>
-<label for="rentalDuration">Rental Duration:</label> <input type="text" name="rentalDuration" value="${rentalDuration }"/><br>
 <label for="replacementCost">Replacement Cost:</label> <input type="text" name="replacementCost" value="${replacementCost }"/><br>
 <label for="length">Length:</label> <input type="text" name="length" value="${length}"/><br><br>
 

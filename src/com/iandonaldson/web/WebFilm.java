@@ -20,6 +20,7 @@ public class WebFilm extends HttpServlet {
 	private String filmIDParam;
 	private int filmID;
 	private Film film;
+	private String isUpdated = "true";
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -51,6 +52,7 @@ public class WebFilm extends HttpServlet {
 				request.getSession().setAttribute("film", film);
 				request.getSession().setAttribute("id", film.getId());
 				request.getSession().setAttribute("actors", film.getActorList());
+				request.getSession().setAttribute(isUpdated, "true");
 				request.getRequestDispatcher("Film.jsp").forward(request, response);
 				break;
 			case "updateFilmGET":
@@ -60,13 +62,16 @@ public class WebFilm extends HttpServlet {
 				request.getSession().setAttribute("id", Integer.toString(filmID));
 				request.getSession().setAttribute("title", film.getTitle());
 				request.getSession().setAttribute("description", film.getDescription());
-				request.getSession().setAttribute("releaseDate", film.getReleaseDate().toString());
+				//request.getSession().setAttribute("releaseDate", film.getReleaseDate().toString());
 				request.getSession().setAttribute("rentalRate", Double.toString(film.getRentalRate()));
 				request.getSession().setAttribute("replacementCost", Double.toString(film.getReplacementCost()));
 				request.getSession().setAttribute("length", Integer.toString(film.getLength()));
 				request.getRequestDispatcher("FilmUpdate.jsp").forward(request, response);
-			case "manageFilms":
+				break;
+			case "manageFilms": 
 				request.getRequestDispatcher("FilmManagement.jsp").forward(request, response);
+				break;
+			
 			
 			}
 		}
@@ -88,11 +93,18 @@ public class WebFilm extends HttpServlet {
 				film = filmDaoImpl.getFilm(filmID);
 				film.setTitle(request.getParameter("title").toString());
 				film.setDescription(request.getParameter("description").toString());
-				if (filmDaoImpl.updateFilm(film)) {
+				film.setLength(Integer.parseInt(request.getParameter("length")));
+				film.setRentalRate(Double.parseDouble(request.getParameter("rentalRate")));
+				film.setReplacementCost(Double.parseDouble(request.getParameter("replacementCost")));
+				
+				if (!filmDaoImpl.updateFilm(film)) {
+					request.getRequestDispatcher("updateFailure.jsp").forward(request, response);
+				} else {
 					request.getSession().setAttribute("film", film);//available as ${film} in Film.jsp
 					request.getSession().setAttribute("actors", film.getActorList()); //avail as ${actors} in Film.jsp
 					request.getRequestDispatcher("Film.jsp").forward(request, response);
 				}
+				
 			case "searchFilmPOST":
 				filmIDParam = request.getParameter("title").toString();
 				if (filmDaoImpl.searchFilmByTitle(filmIDParam)) {
