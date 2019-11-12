@@ -53,6 +53,9 @@ public class WebActor extends HttpServlet {
 				request.getSession().setAttribute("ActorFilmList", actor.getFilmList());
 				request.getRequestDispatcher("Actor.jsp").forward(request, response);
 				break;
+			case "manageActors":
+				request.getRequestDispatcher("ActorManagement.jsp").forward(request, response);
+				break;
 			}
 		}
 	}

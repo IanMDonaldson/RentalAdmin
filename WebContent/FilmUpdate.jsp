@@ -1,24 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <jsp:include page="/WEB-INF/MenuBar.jsp" />
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-label {
-	float: left;
-	width: 10em;
-	text-align: right;
-	}
-input {
-	margin-left: 1em;
-	margin-bottom: .5em;
-	}
-#button {
-	margin-left:20em;
-	}
-</style>
 <meta charset="UTF-8">
 <title>Movie Rental Co.</title>
+<style>
+	<%@include file="/WEB-INF/css/MenuBar.css" %>
+</style>
 </head>
 <body>
 <form action="WebFilm?action=updateFilm&id=${id }" method="post">
