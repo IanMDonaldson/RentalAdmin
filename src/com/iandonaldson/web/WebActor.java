@@ -42,7 +42,7 @@ public class WebActor extends HttpServlet {
 			ActorDaoImpl actorDaoImpl = new ActorDaoImpl();
 			switch (request.getParameter("action")) {
 			case "getAllActors":
-				request.getSession().setAttribute("ActorList", actorDaoImpl.getAllActors());
+				request.getSession().setAttribute("actorList", actorDaoImpl.getAllActors());
 				request.getRequestDispatcher("ActorList.jsp").forward(request, response);
 				break;
 			case "getActor":
@@ -50,8 +50,14 @@ public class WebActor extends HttpServlet {
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
 				request.getSession().setAttribute("actor", actor);
-				request.getSession().setAttribute("ActorFilmList", actor.getFilmList());
+				request.getSession().setAttribute("films", actor.getFilmList());
 				request.getRequestDispatcher("Actor.jsp").forward(request, response);
+				break;
+			case "updateActorGET":
+				actorIDParam = request.getParameter("id");
+				actorID = Integer.parseInt(actorIDParam);
+				actor = actorDaoImpl.getActor(actorID);
+				
 				break;
 			case "manageActors":
 				request.getRequestDispatcher("ActorManagement.jsp").forward(request, response);
@@ -64,7 +70,38 @@ public class WebActor extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
-	}
+		ActorDaoImpl actorDaoImpl = new ActorDaoImpl();
+		if (request.getParameter("action") == null) {
+			request.getRequestDispatcher("Menu.jsp").forward(request, response);
+		}
+		else {
+			switch (request.getParameter("action")) {
+			case "updateActor":
+				actorIDParam = request.getParameter("id");
+				actorID = Integer.parseInt(actorIDParam);
+				actor = actorDaoImpl.getActor(actorID);
+				actor.setFirstName(request.getParameter("firstName").toString());
+				actor.setLastName(request.getParameter("lastName").toString());
+				
+				if (!actorDaoImpl.updateActor(actor) ) {
+					request.getRequestDispatcher("updateFailure.jsp"); //TODO: Fix to just reload the update page and insert some failure message
+				}
+				else {
+					request.getSession().setAttribute("actor", actor);
+					request.getSession().setAttribute("films", actor.getFilmList());
+					request.getRequestDispatcher("Actor.jsp").forward(request, response);		
+				}
+				break;
+			case "searchActorPOST":
+				actorIDParam = request.getParameter("actorName").toString();
+				if (actorDaoImpl.validActorNameSearch(actorIDParam)) {
+					request.getSession().setAttribute("actorList", actorDaoImpl.getActorsByName(actorIDParam));
+					request.getRequestDispatcher("ActorList.jsp").forward(request, response);
+				}
+				break;
+			
+			}
+		}
+}
 
 }

@@ -14,7 +14,7 @@
 <body>
 <h1>List of Films</h1>
 <p>
-<c:forEach items="${FilmList}" var="current">
+<c:forEach items="${filmList}" var="current">
 	<a href="WebFilm?action=getFilm&id=${current.id}">${current.title}</a><br>
 </c:forEach>
 </p>

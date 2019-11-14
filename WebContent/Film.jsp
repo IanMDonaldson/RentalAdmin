@@ -14,6 +14,7 @@
 </head>
 <body>
 <p>
+<a href="WebFilm?action=getAllFilms">Return to Movies</a><br>
 <h1>${film.title}</h1><br>
 <a href="WebFilm?action=updateFilmGET&id=${film.id}">Update Movie</a>
 <p>
@@ -25,10 +26,8 @@
 	Replacement Cost: $<fmt:formatNumber type="number" maxFractionDigits="2" value="${film.replacementCost}" /><br><br>
 	Actors:<br>
 	<c:forEach items="${actors}" var="actor">
-		${actor.firstName} ${actor.lastName}<br>
+		<a href="WebActor?action=getActor&id=${ actor.id }">${actor.firstName}, ${actor.lastName}</a><br>
 	</c:forEach>
 </p>
-<a href="WebFilm?action=getAllFilms">Return to Movies</a><br>
-<a href="Home">Return to Main Menu</a>
 </body>
 </html>

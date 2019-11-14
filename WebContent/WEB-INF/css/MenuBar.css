@@ -1,14 +1,15 @@
+
 body {
 		height: 125vh;
 		background-size: cover;
 		font-family: noto-serif;
 		margin-top: 80px;
-		padding: 30px;
-		background-color: #a87452
+		padding: 8vh 0 0 3vw;
+		background-color: #f0f0f1;
 }
 
 header {
-		background-color: #bf7680;
+		background-color: #37425e;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -29,12 +30,13 @@ header li {
 }
 
 header li a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	padding: 15px 12px;
+	width: 50%;
 }
 
 header li a:hover {
-	background-color: #d895a1;
+	background-color: #c0c3ca;
 	color: white;
 }

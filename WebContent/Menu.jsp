@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="/WEB-INF/MenuBar.jsp" />
 <!DOCTYPE html>
 <html>
@@ -13,9 +14,9 @@
 <body>
 	<h1>MENU</h1>
 	<ul>
-		<li><a href="WebFilm?action=manageFilms">Films</a></li>
-		<li><a href="WebActor?action=getAllActors">Actors</a></li>
-		<li><a href="WebCustomer?action=getAllCustomers">Customers</a></li>
+		<li><a href="WebFilm?action=manageFilms">Manage Films</a></li>
+		<li><a href="WebActor?action=manageActors">Manage Actors</a></li>
+		<li><a href="WebCustomer?action=getAllCustomers">List Customers</a></li>
 		<li>Stores</li>
 		<li>Staff</li>
 	</ul>
