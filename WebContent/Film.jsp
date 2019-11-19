@@ -19,13 +19,12 @@
 <a href="WebFilm?action=updateFilmGET&id=${film.id}">Update Movie</a>
 <p>
 	Description: ${film.description}<br>
-	Length: ${film.length} minutes<br>
-	Rating: ${film.rating}<br>
-	Rental Duration: ${film.rentalDuration} days<br>
-	Rental Rate: $<fmt:formatNumber type="number" maxFractionDigits="2" value="${film.rentalRate}" /><br>
-	Replacement Cost: $<fmt:formatNumber type="number" maxFractionDigits="2" value="${film.replacementCost}" /><br><br>
+	Length: $<fmt:formatNumber type="number" maxFractionDigits="0" value="${film.length}" /> minutes<br>
+	Rental Duration: $<fmt:formatNumber type="number" maxFractionDigits="0" value="${film.rentalDuration}"/> days<br>
+	Rental Rate: $<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${film.rentalRate}" /><br>
+	Replacement Cost: $<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${film.replacementCost}" /><br><br>
 	Actors:<br>
-	<c:forEach items="${actors}" var="actor">
+	<c:forEach items="${filmsActorList}" var="actor">
 		<a href="WebActor?action=getActor&id=${ actor.id }">${actor.firstName}, ${actor.lastName}</a><br>
 	</c:forEach>
 </p>

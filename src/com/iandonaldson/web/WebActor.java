@@ -50,14 +50,17 @@ public class WebActor extends HttpServlet {
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
 				request.getSession().setAttribute("actor", actor);
-				request.getSession().setAttribute("films", actor.getFilmList());
+				request.getSession().setAttribute("actorsFilmList", actor.getFilmList());
 				request.getRequestDispatcher("Actor.jsp").forward(request, response);
 				break;
 			case "updateActorGET":
 				actorIDParam = request.getParameter("id");
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
-				
+				request.getSession().setAttribute("id", Integer.toString(actorID));
+				request.getSession().setAttribute("firstName", actor.getFirstName());
+				request.getSession().setAttribute("lastName", actor.getLastName());
+				request.getRequestDispatcher("ActorUpdate.jsp").forward(request, response);
 				break;
 			case "manageActors":
 				request.getRequestDispatcher("ActorManagement.jsp").forward(request, response);
@@ -76,7 +79,7 @@ public class WebActor extends HttpServlet {
 		}
 		else {
 			switch (request.getParameter("action")) {
-			case "updateActor":
+			case "updateActorPOST":
 				actorIDParam = request.getParameter("id");
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
@@ -84,7 +87,7 @@ public class WebActor extends HttpServlet {
 				actor.setLastName(request.getParameter("lastName").toString());
 				
 				if (!actorDaoImpl.updateActor(actor) ) {
-					request.getRequestDispatcher("updateFailure.jsp"); //TODO: Fix to just reload the update page and insert some failure message
+					request.getRequestDispatcher("updateFailure.jsp").forward(request, response);
 				}
 				else {
 					request.getSession().setAttribute("actor", actor);

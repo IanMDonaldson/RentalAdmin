@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <jsp:include page="/WEB-INF/MenuBar.jsp" />
 <!DOCTYPE html>
 <html>
@@ -12,31 +13,38 @@
 </style>
 </head>
 <body>
-<form action="WebFilm?action=updateFilm&id=${id }" method="post">
+<c:choose>
+	<c:when test="${isUpdated }">
+	</c:when>
+	<c:otherwise>
+		<%@include file="updateFailure.jsp" %>
+	</c:otherwise>
+</c:choose>
+<form action="WebFilm?action=updateFilmPOST&id=${id }" method="post">
 	<input type="hidden" name="id" value="${id }"/>
 	<fieldset>
 		 
-		 <p><label for="title">Title:</label><input type="text" name="title" value="${title }"/></p>
+		 <label for="title">Title:</label><input type="text" name="title" value="${title }" pattern="^[^0-9]+$"/><br>
 	 
 	 
-		 <p><label for="description">Description:</label> 
-		 	<input type="text" name ="description" value="${description}"/></p>
+		 <label for="description">Description:</label> 
+		 	<input type="text" name ="description" value="${description}" pattern="^[^0-9]+$"/><br>
 	 
 	 
-		 <p><label for="rentalRate">Rental Rate:</label> 
-		 	<input type="text" name="rentalRate" value="${rentalRate }"/></p> 
+		 <label for="rentalRate">Rental Rate:</label> 
+		 	<input type="text" name="rentalRate" value="${rentalRate }" pattern="^\d*(\.\d{0,2})?$"/> <br>
 	 
 	 
-		 <p><label for="replacementCost">Replacement Cost:</label> 
-		 	<input type="text" name="replacementCost" value="${replacementCost }"/></p> 
+		 <label for="replacementCost">Replacement Cost:</label> 
+		 	<input type="text" name="replacementCost" value="${replacementCost }" pattern="^\d*(\.\d{0,2})?$"/><br>
 	 
 	 
-		 <p><label for="length">Length:</label> 
-		 	<input type="text" name="length" value="${length}"/></p><br> 
+		 <label for="length">Length:</label> 
+		 	<input type="text" name="length" value="${length}" pattern="^\d*(\.\d{0,2})?$"/><br><br>
 	 
 	 
 		 <input type="submit" id="submitbutton" class="button" value="Update Film"/> 
-		 <button class="button">Cancel</button> 
+		 <a href="WebFilm?action=getFilm&id=${id }" class="button">Cancel</a> 
 		 
 	</fieldset>
 </form>

@@ -2,14 +2,14 @@
 body {
 		height: 125vh;
 		background-size: cover;
-		font-family: noto-serif;
+		font-family: "Open-Sans", sans-serif;
 		margin-top: 80px;
 		padding: 8vh 0 0 3vw;
 		background-color: #f0f0f1;
 }
 
 header {
-		background-color: #37425e;
+		background-color: transparent;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -18,25 +18,33 @@ header {
 		padding-top: 15px;
 		padding-bottom: 10px;
 		text-align: center;
-		box-shadow: 0 0 20px 0 black;
 }
 header * {
 	display: inline;
 }
 
 header li {
-	margin: 20px;
+	color: white;
+	border-radius: 15px;
+	background-color: #37425e;
 	padding: 8px 8px;
 }
 
-header li a {
-	color: white;
-	text-decoration: none;
-	padding: 15px 12px;
-	width: 50%;
+
+header li:hover {
+	border-radius: 15px;
+	background-color: #c0c3ca;
 }
 
-header li a:hover {
-	background-color: #c0c3ca;
+header li a {
+	border-radius: 15px;
+	margin: 20px;
 	color: white;
+	text-decoration: none;
+	padding: 8px 8px;
 }
+header li a:hover {
+	border-radius: 15px;
+	color: #4d2500;
+}
+
