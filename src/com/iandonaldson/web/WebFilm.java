@@ -42,7 +42,7 @@ public class WebFilm extends HttpServlet {
 			FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
 			switch(request.getParameter("action")) {
 			case "getAllFilms":
-				request.getSession().setAttribute("FilmList", filmDaoImpl.getAllFilms());
+				request.getSession().setAttribute("filmList", filmDaoImpl.getAllFilms());
 				request.getRequestDispatcher("FilmList.jsp").forward(request, response);
 				break;
 			case "getFilm":
@@ -104,13 +104,14 @@ public class WebFilm extends HttpServlet {
 					request.getSession().setAttribute("actors", film.getActorList()); //avail as ${actors} in Film.jsp
 					request.getRequestDispatcher("Film.jsp").forward(request, response);
 				}
-				
+				break;
 			case "searchFilmPOST":
 				filmIDParam = request.getParameter("title").toString();
 				if (filmDaoImpl.searchFilmByTitle(filmIDParam)) {
-					request.getSession().setAttribute("FilmList", filmDaoImpl.getFilmsByTitle(filmIDParam));
+					request.getSession().setAttribute("filmList", filmDaoImpl.getFilmsByTitle(filmIDParam));
 					request.getRequestDispatcher("FilmList.jsp").forward(request, response);
 				}
+				break;
 			}
 		}
 	}

@@ -51,6 +51,9 @@ public class WebCustomer extends HttpServlet {
 				break;
 			case "updateCustomer":
 				break;
+			case "manageCustomers":
+				request.getRequestDispatcher("CustomerManagement.jsp").forward(request, response);
+				break;
 			}
 		}
 		

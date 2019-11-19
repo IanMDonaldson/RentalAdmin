@@ -1,0 +1,42 @@
+
+body {
+		height: 125vh;
+		background-size: cover;
+		font-family: noto-serif;
+		margin-top: 80px;
+		padding: 8vh 0 0 3vw;
+		background-color: #f0f0f1;
+}
+
+header {
+		background-color: #37425e;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 25px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		text-align: center;
+		box-shadow: 0 0 20px 0 black;
+}
+header * {
+	display: inline;
+}
+
+header li {
+	margin: 20px;
+	padding: 8px 8px;
+}
+
+header li a {
+	color: white;
+	text-decoration: none;
+	padding: 15px 12px;
+	width: 50%;
+}
+
+header li a:hover {
+	background-color: #c0c3ca;
+	color: white;
+}
