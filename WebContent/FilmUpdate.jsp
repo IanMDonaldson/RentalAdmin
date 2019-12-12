@@ -13,13 +13,6 @@
 </style>
 </head>
 <body>
-<c:choose>
-	<c:when test="${isUpdated }">
-	</c:when>
-	<c:otherwise>
-		<%@include file="updateFailure.jsp" %>
-	</c:otherwise>
-</c:choose>
 <form action="WebFilm?action=updateFilmPOST&id=${id }" method="post">
 	<input type="hidden" name="id" value="${id }"/>
 	<fieldset>

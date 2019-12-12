@@ -11,6 +11,10 @@
 </style>
 </head>
 <body>
-Customer Management page under construction!
+<form action="WebCustomer?action=searchCustomerPOST" method="post">
+Search: <input type="text" name="customerName"/>
+<input type="submit" value="Search Customers" /><br><br>
+<a href="WebCustomer?action=getAllCustomers">List All Customers</a>
+</form>
 </body>
 </html>

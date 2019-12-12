@@ -15,6 +15,7 @@
 <body>
 <a href="WebActor?action=getAllActors" class="button">Return to Actor List</a>
 <a href="WebActor?action=updateActorGET&id=${actor.id }" class="button">Update Actor</a><br><br>
+<!--<a href="WebActor?action=deleteActorGET&id=${actor.id }" class="button">Delete Actor</a><br><br><!-- TODO: double confirm on click -->
 	<div class="types">First Name: </div><div class="data">${actor.firstName }</div><br>
 	<div class="types">Last Name: </div><div class="data">${actor.lastName }</div><br>
 	<div class="types">Actor's ID: </div><div class="data">${actor.id }</div><br>

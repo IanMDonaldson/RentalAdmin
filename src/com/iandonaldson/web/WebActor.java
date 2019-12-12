@@ -1,6 +1,8 @@
 package com.iandonaldson.web;
 
 import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,6 +22,8 @@ public class WebActor extends HttpServlet {
        private String actorIDParam;
        private int actorID;
        private Actor actor;
+       private String actorFName;
+       private String actorLName;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -65,6 +69,29 @@ public class WebActor extends HttpServlet {
 			case "manageActors":
 				request.getRequestDispatcher("ActorManagement.jsp").forward(request, response);
 				break;
+			case "addActorGET":
+				/* call actordaoimpl to return the last actor's id + 1
+				 * push it to the addactor page to be verified with actorAddPOST and actordaoimpl*/
+				actorID = actorDaoImpl.getNewActorID();
+				request.getSession().setAttribute("id", Integer.toString(actorID));
+				request.getRequestDispatcher("AddActor.jsp").forward(request, response);
+				break;
+			case "deleteActorGET":
+				/* call actorDaoimpl to return a list of removable actors to present 
+				 * on the deleteactor.jsp page if no Actors returned/list = NULL, refer to failure page
+				 * eg, */
+				List<Actor> actors = new LinkedList<Actor>();
+				actors = actorDaoImpl.getRemovableActors();
+				if (actors == null) {
+					request.getSession().setAttribute("add", false);
+					request.getSession().setAttribute("delete", false);
+					request.getSession().setAttribute("update", false);
+					request.getSession().setAttribute("noActorsToDelete", true);
+				} else {
+					request.getSession().setAttribute("removableActors", actorDaoImpl.getRemovableActors());
+					request.getRequestDispatcher("ActorDelete.jsp").forward(request, response);
+				}
+				break;
 			}
 		}
 	}
@@ -87,7 +114,8 @@ public class WebActor extends HttpServlet {
 				actor.setLastName(request.getParameter("lastName").toString());
 				
 				if (!actorDaoImpl.updateActor(actor) ) {
-					request.getRequestDispatcher("updateFailure.jsp").forward(request, response);
+					request.getSession().setAttribute("update", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
 				}
 				else {
 					request.getSession().setAttribute("actor", actor);
@@ -100,6 +128,45 @@ public class WebActor extends HttpServlet {
 				if (actorDaoImpl.validActorNameSearch(actorIDParam)) {
 					request.getSession().setAttribute("actorList", actorDaoImpl.getActorsByName(actorIDParam));
 					request.getRequestDispatcher("ActorList.jsp").forward(request, response);
+				}
+				break;
+			case "addActorPOST":
+				/* verify if the first and last name entered is a copy of another entry in the actor's table
+				 * if so, add, if not present a failure page that redirects to the actor management page*/
+				actorIDParam = request.getParameter("id");
+				actorID = Integer.parseInt(actorIDParam);
+				actorFName = request.getParameter("firstName");
+				actorLName = request.getParameter("lastName");
+				actor.setId(actorID);
+				actor.setFirstName(actorFName);
+				actor.setLastName(actorLName);
+				//make if/else below easier to read
+				boolean actorExists = actorDaoImpl.actorExists(actor);
+				
+				if (actorExists) {
+					request.getSession().setAttribute("add", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+				}
+				else {
+					actorDaoImpl.addActor(actor);
+					request.getSession().setAttribute("actor", actor.getId());
+					request.getSession().setAttribute("films", actor.getFilmList());
+					request.getRequestDispatcher("Actor.jsp").forward(request, response);
+				}
+				break;
+				//TODO: add a film list to retrieve from form later when more advanced actor adding is implemented
+			case "deleteActorPOST":
+				/* call actordaoimpl function that executes the delete query, 
+				 * 	then dispatch back to actor management*/
+				actorIDParam = request.getParameter("removableActors").toString();
+				actorID = Integer.parseInt(actorIDParam);
+				actor = actorDaoImpl.getActor(actorID);
+				if (!actorDaoImpl.deleteActor(actor)) {
+					request.getSession().setAttribute("delete", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+				}
+				else {
+					request.getRequestDispatcher("ActorManagement.jsp").forward(request, response);
 				}
 				break;
 			

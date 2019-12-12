@@ -99,7 +99,10 @@ public class WebFilm extends HttpServlet {
 				film.setReplacementCost(Double.parseDouble(request.getParameter("replacementCost")));
 				
 				if (!filmDaoImpl.updateFilm(film)) {
-					request.getRequestDispatcher("updateFailure.jsp").forward(request, response);
+					request.getSession().setAttribute("add", false);
+					request.getSession().setAttribute("delete", false);
+					request.getSession().setAttribute("update", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
 				} else {
 					request.getSession().setAttribute("film", film);//available as ${film} in Film.jsp
 					request.getSession().setAttribute("actors", film.getActorList()); //avail as ${actors} in Film.jsp
