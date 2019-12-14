@@ -53,7 +53,9 @@ public class WebActor extends HttpServlet {
 				actorIDParam = request.getParameter("id");
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
-				request.getSession().setAttribute("actor", actor);
+				request.getSession().setAttribute("id", actor.getId());
+				request.getSession().setAttribute("firstName", actor.getFirstName());
+				request.getSession().setAttribute("lastName", actor.getLastName());
 				request.getSession().setAttribute("actorsFilmList", actor.getFilmList());
 				request.getRequestDispatcher("Actor.jsp").forward(request, response);
 				break;
@@ -74,7 +76,7 @@ public class WebActor extends HttpServlet {
 				 * push it to the addactor page to be verified with actorAddPOST and actordaoimpl*/
 				actorID = actorDaoImpl.getNewActorID();
 				request.getSession().setAttribute("id", Integer.toString(actorID));
-				request.getRequestDispatcher("AddActor.jsp").forward(request, response);
+				request.getRequestDispatcher("ActorAdd.jsp").forward(request, response);
 				break;
 			case "deleteActorGET":
 				/* call actorDaoimpl to return a list of removable actors to present 
@@ -137,6 +139,9 @@ public class WebActor extends HttpServlet {
 				actorID = Integer.parseInt(actorIDParam);
 				actorFName = request.getParameter("firstName");
 				actorLName = request.getParameter("lastName");
+				
+				Actor actor = new Actor();
+				
 				actor.setId(actorID);
 				actor.setFirstName(actorFName);
 				actor.setLastName(actorLName);
@@ -149,8 +154,10 @@ public class WebActor extends HttpServlet {
 				}
 				else {
 					actorDaoImpl.addActor(actor);
-					request.getSession().setAttribute("actor", actor.getId());
-					request.getSession().setAttribute("films", actor.getFilmList());
+					request.getSession().setAttribute("id", actor.getId());
+					request.getSession().setAttribute("firstName", actor.getFirstName());
+					request.getSession().setAttribute("lastName", actor.getLastName());
+					request.getSession().setAttribute("actorsFilmList", actor.getFilmList());
 					request.getRequestDispatcher("Actor.jsp").forward(request, response);
 				}
 				break;

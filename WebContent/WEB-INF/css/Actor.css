@@ -21,7 +21,7 @@ body {
 
 .types {
 	display: inline-block;
-	width: 10%;
+	width: 25%;
 	margin: 5px auto;
 	text-align: right;
 }
@@ -35,6 +35,6 @@ body {
 
 .list {
 	font-family: "Open-Sans", sans-serif;
-	padding-left: 10.5%;
+	padding-left: 25.5%;
 	text-align: left;
 }

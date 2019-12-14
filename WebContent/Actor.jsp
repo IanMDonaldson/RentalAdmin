@@ -14,12 +14,11 @@
 </head>
 <body>
 <a href="WebActor?action=getAllActors" class="button">Return to Actor List</a>
-<a href="WebActor?action=updateActorGET&id=${actor.id }" class="button">Update Actor</a><br><br>
-<!--<a href="WebActor?action=deleteActorGET&id=${actor.id }" class="button">Delete Actor</a><br><br><!-- TODO: double confirm on click -->
-	<div class="types">First Name: </div><div class="data">${actor.firstName }</div><br>
-	<div class="types">Last Name: </div><div class="data">${actor.lastName }</div><br>
-	<div class="types">Actor's ID: </div><div class="data">${actor.id }</div><br>
-	<div class="types">Film's Played by Actor: </div>
+<a href="WebActor?action=updateActorGET&id=${id }" class="button">Update Actor</a><br><br>
+	<div class="types">First Name: </div><div class="data">${firstName }</div><br>
+	<div class="types">Last Name: </div><div class="data">${lastName }</div><br>
+	<div class="types">Actor's ID: </div><div class="data">${id }</div><br>
+	<div class="types">Films Played by Actor: </div>
 		<div class="list">
 			<c:forEach items="${actorsFilmList}" var="film">
 				<a href="WebFilm?action=getFilm&id=${film.id}">${film.title }</a><br>

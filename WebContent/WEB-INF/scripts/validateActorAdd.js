@@ -1,4 +1,4 @@
-validateOrSubmit = function() {
+validateActorAdd = function() {
 	var fName = document.getElementById("firstName").value;
 	var lName = document.getElementById("lastName").value;
 	var id = document.getElementById("id").value;
