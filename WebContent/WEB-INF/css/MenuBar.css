@@ -9,7 +9,7 @@ body {
 }
 
 header {
-		background-color: transparent;
+		background-color: #f0f0f1;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -27,7 +27,7 @@ header li {
 	color: white;
 	border-radius: 15px;
 	background-color: #37425e;
-	padding: 8px 8px;
+	padding: .83vh .87vw;
 }
 
 
@@ -41,7 +41,7 @@ header li a {
 	margin: 20px;
 	color: white;
 	text-decoration: none;
-	padding: 8px 8px;
+	padding: .83vh .87vw;
 }
 header li a:hover {
 	border-radius: 15px;

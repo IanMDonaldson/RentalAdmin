@@ -16,9 +16,9 @@
   	<form action="WebActor?action=addActorPOST&id=${id }" method="post" name="myForm">
   		<input type="hidden" id="id" name="id" value="${id }"/>
 		<fieldset>
-			<label for="firstName">First Name: </label><input type="text" name="firstName" id="firstName" pattern="^[A-Z]{1}[a-z]+$"/><br>
-			<label for="lastName">Last Name: </label><input type="text" name="lastName" id="lastName" pattern="^[A-Z]{1}[a-z]+$"/><br>
-			<input type="submit" name="submit" onclick="validateActorAdd" value="Add Actor"/>
+			<label for="firstName">First Name: </label><input type="text" style="text-transform: uppercase" name="firstName" id="firstName" pattern="[A-Za-z]*"/><br>
+			<label for="lastName">Last Name: </label><input type="text" style="text-transform: uppercase" name="lastName" id="lastName" pattern="[A-Za-z]*"/><br>
+			<input type="submit" name="submit" onclick="validateActorAdd()" value="Add Actor"/>
 			<input type="button" onclick="window.location='http://localhost:8080/RentalWeb/ActorManagement.jsp'" value="Cancel"/>
 		</fieldset>
 	</form>

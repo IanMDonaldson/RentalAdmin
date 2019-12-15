@@ -15,10 +15,10 @@
 <form action="WebActor?action=updateActorPOST&id=${ id }" method="post">
 	<input type="hidden" name="id" value="${ id }"/>
 	<fieldset>
-		<label for="firstName">First Name: </label><input type="text" name="firstName" value="${firstName }" pattern="^[A-Za-z]+$"/><br>
-		<label for="lastName">Last Name: </label><input type="text" name="lastName"	value="${lastName }" pattern="^[A-Za-z]+$"/><br><br>
+		<label for="firstName">First Name: </label><input style="text-transform: uppercase"  type="text" name="firstName" value="${firstName }" pattern="^[A-Za-z]+$"/><br>
+		<label for="lastName">Last Name: </label><input style="text-transform: uppercase" type="text" name="lastName"	value="${lastName }" pattern="^[A-Za-z]+$"/><br><br>
 		<input type="submit" id="submitbutton" class="button" value="Update Actor"/>
-		<input type="button" onclick="WebActor?action=getActor&id=${id}" value="Cancel"/>
+		<input type="button" onclick="window.location='http://localhost:8080/RentalWeb/ActorManagement.jsp'" value="Cancel"/>
 	</fieldset>
 </form>
 </body>

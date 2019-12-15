@@ -13,7 +13,7 @@
 </style>
 </head>
 <body>
-	<a href="WebActor?action=addActor" class="button">Add Actor</a>
+	<a href="WebActor?action=addActorGET" class="button">Add Actor</a>
 	<a href="WebActor?action=deleteActorGET" class="button" id="delete">Delete Actor</a>
 	<h1>List of Actors</h1>
 	<c:forEach items="${actorList}" var="current">

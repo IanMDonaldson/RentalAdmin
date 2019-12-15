@@ -64,8 +64,8 @@ public class WebActor extends HttpServlet {
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
 				request.getSession().setAttribute("id", Integer.toString(actorID));
-				request.getSession().setAttribute("firstName", actor.getFirstName());
-				request.getSession().setAttribute("lastName", actor.getLastName());
+				request.getSession().setAttribute("firstName", actor.getFirstName().toUpperCase());
+				request.getSession().setAttribute("lastName", actor.getLastName().toUpperCase());
 				request.getRequestDispatcher("ActorUpdate.jsp").forward(request, response);
 				break;
 			case "manageActors":
@@ -112,21 +112,23 @@ public class WebActor extends HttpServlet {
 				actorIDParam = request.getParameter("id");
 				actorID = Integer.parseInt(actorIDParam);
 				actor = actorDaoImpl.getActor(actorID);
-				actor.setFirstName(request.getParameter("firstName").toString());
-				actor.setLastName(request.getParameter("lastName").toString());
+				actor.setFirstName(request.getParameter("firstName").toString().toUpperCase());
+				actor.setLastName(request.getParameter("lastName").toString().toUpperCase());
 				
 				if (!actorDaoImpl.updateActor(actor) ) {
 					request.getSession().setAttribute("update", true);
 					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
 				}
 				else {
-					request.getSession().setAttribute("actor", actor);
+					request.getSession().setAttribute("id", actor.getId());
+					request.getSession().setAttribute("firstName", actor.getFirstName().toUpperCase());
+					request.getSession().setAttribute("lastName", actor.getLastName().toUpperCase());
 					request.getSession().setAttribute("films", actor.getFilmList());
 					request.getRequestDispatcher("Actor.jsp").forward(request, response);		
 				}
 				break;
 			case "searchActorPOST":
-				actorIDParam = request.getParameter("actorName").toString();
+				actorIDParam = request.getParameter("actorName").toString().toUpperCase();
 				if (actorDaoImpl.validActorNameSearch(actorIDParam)) {
 					request.getSession().setAttribute("actorList", actorDaoImpl.getActorsByName(actorIDParam));
 					request.getRequestDispatcher("ActorList.jsp").forward(request, response);
@@ -137,8 +139,8 @@ public class WebActor extends HttpServlet {
 				 * if so, add, if not present a failure page that redirects to the actor management page*/
 				actorIDParam = request.getParameter("id");
 				actorID = Integer.parseInt(actorIDParam);
-				actorFName = request.getParameter("firstName");
-				actorLName = request.getParameter("lastName");
+				actorFName = request.getParameter("firstName").toUpperCase();
+				actorLName = request.getParameter("lastName").toUpperCase();
 				
 				Actor actor = new Actor();
 				
@@ -153,12 +155,16 @@ public class WebActor extends HttpServlet {
 					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
 				}
 				else {
-					actorDaoImpl.addActor(actor);
-					request.getSession().setAttribute("id", actor.getId());
-					request.getSession().setAttribute("firstName", actor.getFirstName());
-					request.getSession().setAttribute("lastName", actor.getLastName());
-					request.getSession().setAttribute("actorsFilmList", actor.getFilmList());
-					request.getRequestDispatcher("Actor.jsp").forward(request, response);
+					if (!actorDaoImpl.addActor(actor)) {
+						request.getSession().setAttribute("add", true);
+						request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+					} else {
+						request.getSession().setAttribute("id", actor.getId());
+						request.getSession().setAttribute("firstName", actor.getFirstName().toUpperCase());
+						request.getSession().setAttribute("lastName", actor.getLastName().toUpperCase());
+						request.getSession().setAttribute("actorsFilmList", actor.getFilmList());
+						request.getRequestDispatcher("Actor.jsp").forward(request, response);
+					}
 				}
 				break;
 				//TODO: add a film list to retrieve from form later when more advanced actor adding is implemented
