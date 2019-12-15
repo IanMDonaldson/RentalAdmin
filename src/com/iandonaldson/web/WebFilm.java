@@ -51,7 +51,7 @@ public class WebFilm extends HttpServlet {
 				film = filmDaoImpl.getFilm(filmID);
 				request.getSession().setAttribute("film", film);
 				request.getSession().setAttribute("id", film.getId());
-				request.getSession().setAttribute("actors", film.getActorList());
+				request.getSession().setAttribute("filmsActorList", film.getActorList());
 				request.getSession().setAttribute(isUpdated, "true");
 				request.getRequestDispatcher("Film.jsp").forward(request, response);
 				break;
@@ -66,6 +66,7 @@ public class WebFilm extends HttpServlet {
 				request.getSession().setAttribute("rentalRate", Double.toString(film.getRentalRate()));
 				request.getSession().setAttribute("replacementCost", Double.toString(film.getReplacementCost()));
 				request.getSession().setAttribute("length", Integer.toString(film.getLength()));
+				request.getSession().setAttribute(isUpdated, "true");
 				request.getRequestDispatcher("FilmUpdate.jsp").forward(request, response);
 				break;
 			case "manageFilms": 
@@ -87,7 +88,7 @@ public class WebFilm extends HttpServlet {
 		}
 		else {
 			switch (request.getParameter("action")) {
-			case "updateFilm":
+			case "updateFilmPOST":
 				filmIDParam = request.getParameter("id");
 				filmID = Integer.parseInt(filmIDParam);
 				film = filmDaoImpl.getFilm(filmID);
@@ -98,7 +99,10 @@ public class WebFilm extends HttpServlet {
 				film.setReplacementCost(Double.parseDouble(request.getParameter("replacementCost")));
 				
 				if (!filmDaoImpl.updateFilm(film)) {
-					request.getRequestDispatcher("updateFailure.jsp").forward(request, response);
+					request.getSession().setAttribute("add", false);
+					request.getSession().setAttribute("delete", false);
+					request.getSession().setAttribute("update", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
 				} else {
 					request.getSession().setAttribute("film", film);//available as ${film} in Film.jsp
 					request.getSession().setAttribute("actors", film.getActorList()); //avail as ${actors} in Film.jsp

@@ -11,11 +11,12 @@
 </style>
 </head>
 <body>
-<h1>Actors page under Construction</h1>
 <form action="WebActor?action=searchActorPOST" method="post">
 Search: <input type="text" name="actorName"/>
 <input type="submit" value="Search Actors" /><br><br>
 <a href="WebActor?action=getAllActors">List all Actors</a>
+<a href="WebActor?action=addActorGET">Add Actor</a>
+<a href="WebActor?action=deleteActorGET">Delete Actor</a>
 </form>
 </body>
 </html>

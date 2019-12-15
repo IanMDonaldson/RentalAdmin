@@ -13,5 +13,22 @@
 </head>
 <body>
 
+<div class="Row">
+	<div>
+		<h2>About this website</h2>
+		<p>
+		
+		</p>
+	</div>
+	<div>
+		<h2>Current tasks</h2>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<p>
+
+</p>
 </body>
 </html>

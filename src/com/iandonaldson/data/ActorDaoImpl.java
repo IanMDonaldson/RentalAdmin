@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Collections;
-import java.util.Comparator;
 
 
 public class ActorDaoImpl implements ActorDao {
@@ -42,7 +41,7 @@ public class ActorDaoImpl implements ActorDao {
 	}
 	
 	
-	public List<Actor> getActors(PreparedStatement ps) {
+	public List<Actor> getActors(PreparedStatement ps) {//helper function
 		List<Actor> actors = new LinkedList<Actor>();
 		FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
 		ActorLNameComparer lnameCompare = new ActorLNameComparer();
@@ -119,11 +118,13 @@ public class ActorDaoImpl implements ActorDao {
 		
 		try {
 			PreparedStatement ps = conn.prepareStatement(completeStatement);
-			int j = 1;
-			for (int i = 0; i < names.length; i++) {
-				ps.setString(j, names[i]);
-				ps.setString(j+1, names[i]);
-				j+=2;
+			if (names.length == 1) {
+				ps.setString(1, names[0]);
+				ps.setString(2, names[0]);
+			}
+			else if (names.length >= 2) {
+				ps.setString(1, names[0]);
+				ps.setString(2, names[1]);
 			}
 			actorList = getActors(ps);
 			ps.close();
@@ -143,11 +144,13 @@ public class ActorDaoImpl implements ActorDao {
 		String completeStatement = actorSearchSQLQuery(names);
 		try {
 			PreparedStatement ps = conn.prepareStatement(completeStatement);
-			int j = 1;
-			for (int i = 0; i < names.length; i++) {			
-				ps.setString(j, names[i]);
-				ps.setString(j+1, names[i]);
-				j+=2;
+			if (names.length == 1) {
+				ps.setString(1, names[0]);
+				ps.setString(2, names[0]);
+			}
+			else if (names.length >= 2) {
+				ps.setString(1, names[0]);
+				ps.setString(2, names[1]);
 			}
 			ResultSet rs = ps.executeQuery();
 			if (rs != null) {
@@ -163,30 +166,179 @@ public class ActorDaoImpl implements ActorDao {
 	}
 	@Override
 	public boolean updateActor(Actor actor) {
-		return false;
+		boolean isUpdated = false;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("update actor "
+					+ "set first_name=?, last_name=?"
+					+ "where actor_id=?;");
+			ps.setString(1, actor.getFirstName());
+			ps.setString(2, actor.getLastName());
+			ps.setInt(3, actor.getId());
+			int rowChanged = ps.executeUpdate();
+			if (rowChanged > 0) {
+				isUpdated = true;
+				conn.close();
+				ps.close();
+				return isUpdated;
+			}
+			conn.close();
+			ps.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return isUpdated;
 	}
 
 	@Override
-	public boolean deleteActor(int Id) {
-		return false;
+	public boolean deleteActor(Actor actor) {
+		boolean actorDeleted = false;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("DELETE FROM actor "
+					+ "WHERE actor_id = ?;");
+			ps.setInt(1, actor.getId());
+			Integer i = ps.executeUpdate();
+			if (i != 0) {
+				actorDeleted = true;
+			}
+			ps.close();
+			conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return actorDeleted;
 	}
 	@Override
-	public String actorSearchSQLQuery(String names[]) {
-		
-		String completeStatement = "SELECT * FROM actor WHERE actor.first_name LIKE "
-				+ "CONCAT('%', ?, '%') OR actor.last_name LIKE "
-				+ "CONCAT('%', ?, '%')";
-		if (names.length > 1) {
-			for (int i = 1; i < names.length; i++) {
-				String tempStatement = " UNION "
-						+ "SELECT * FROM actor WHERE actor.first_name LIKE "
-						+ "CONCAT('%', ?, '%') OR actor.last_name LIKE "
-						+ "CONCAT('%', ?, '%')";
-				completeStatement = completeStatement + tempStatement;
-			}
+	public String actorSearchSQLQuery(String names[]) {//helper function
+		//TODO if one word search first OR last
+		//if two words search first AND last
+		//if three words disgregard it and more
+		String completeStatement = null;
+		if (names.length == 1) { // when one word search query, search by either last OR first
+			completeStatement = "SELECT * FROM actor WHERE actor.first_name LIKE "
+					+ "CONCAT('%', ?, '%') OR actor.last_name LIKE "
+					+ "CONCAT('%', ?, '%');";	
 		}
-		completeStatement += ";";
+		else if (names.length >= 2) { //search first names with the first word, and last names with the second, disregarding
+									  //the rest of the words (if there are more than two)
+			completeStatement = "SELECT * FROM actor WHERE actor.first_name LIKE "
+					+ "CONCAT('%', ?, '%') AND actor.last_name LIKE "
+					+ "CONCAT('%', ?, '%');";
+		}
 		return completeStatement;
+	}
+
+
+	/*
+	 * @Override public Actor addActor(Actor actor) { //actor existing is previously
+	 * verified so insertion into database is all this does Connection conn =
+	 * ConnectionFactory.getConnection(); try { PreparedStatement ps =
+	 * conn.prepareStatement("INSERT INTO actor(first_name, last_name) " +
+	 * "VALUES (?, ?);"); ps.setString(1, actor.getFirstName()); ps.setString(2,
+	 * actor.getLastName());
+	 * 
+	 * ps.close(); conn.close(); } catch (SQLException e) { e.printStackTrace(); }
+	 * return actor; }
+	 */
+
+
+	@Override
+	public Integer getNewActorID() {
+		Integer newActorID = -1;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("select * from sakila.actor A "
+					+ "order by A.actor_id desc limit 1;");
+			ResultSet rs = ps.executeQuery();
+			rs.next();
+			newActorID = rs.getInt("actor_id") + 1;
+			rs.close();
+			return newActorID;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return newActorID;
+	}
+
+
+	@Override
+	public boolean actorExists(Actor actor) {
+		//called from WebActor.addActorPOST
+		boolean actorExists = true;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("Select * from actor "
+					+ "where (first_name LIKE CONCAT('%', ?, '%') AND "
+					+ "last_name LIKE CONCAT('%', ?, '%') ) OR actor_id = ?;");
+			ps.setString(1, actor.getFirstName());
+			ps.setString(2, actor.getLastName());
+			ps.setInt(3, actor.getId());
+			ResultSet rs = ps.executeQuery();
+			if (rs != null) {
+				actorExists = false; //if actor doesn't exist then we can add the actor
+				return actorExists;
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return actorExists;
+	}
+
+
+	@Override
+	public List<Actor> getRemovableActors() {
+		Connection conn = ConnectionFactory.getConnection();
+		List<Actor> actors = new LinkedList<Actor>();
+		FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
+		try {
+			PreparedStatement ps = conn.prepareStatement("SELECT actor_id, first_name, last_name "
+					+ "FROM actor "
+					+ "WHERE NOT EXISTS(SELECT actor_id FROM film_actor WHERE film_actor.actor_id = actor.actor_id);");
+			ResultSet rs = ps.executeQuery();
+			if (rs != null) {
+				while (rs.next()) {
+					Actor actor = new Actor();
+					actor.setId(rs.getInt("actor_id"));
+					actor.setFirstName(rs.getString("first_name"));
+					actor.setLastName(rs.getString("last_name"));
+					actor.setFilmList(filmDaoImpl.setFilmsForActor(actor));
+					actors.add(actor);
+				}
+				return actors;
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	@Override
+	public boolean addActor(Actor actor) {
+		//actor existing is previously verified so insertion into database is all this does
+		boolean isAddSuccessful = false;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("INSERT INTO actor(first_name, last_name) "
+					+ "VALUES (?, ?);");
+			ps.setString(1, actor.getFirstName());
+			ps.setString(2, actor.getLastName());
+			int rowChanged = ps.executeUpdate();
+			if (rowChanged == 0) {
+				return isAddSuccessful;
+			} else {
+				isAddSuccessful = true;
+				ps.close();
+				conn.close();
+				return isAddSuccessful;
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return isAddSuccessful;
 	}
 
 }

@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="UTF_8">
 </head>
 <body>
 <header>
-	<ul>
+	<ul id="navButtons">
 		<li><a href="Home">Main Menu</a></li>
 		<li><a href="WebFilm?action=manageFilms">Film Management</a></li>
 		<li><a href="WebActor?action=manageActors">Actor Management</a></li>

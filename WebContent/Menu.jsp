@@ -16,7 +16,7 @@
 	<ul>
 		<li><a href="WebFilm?action=manageFilms">Manage Films</a></li>
 		<li><a href="WebActor?action=manageActors">Manage Actors</a></li>
-		<li><a href="WebCustomer?action=getAllCustomers">List Customers</a></li>
+		<li><a href="WebCustomer?action=manageCustomers">List Customers</a></li>
 		<li>Stores</li>
 		<li>Staff</li>
 	</ul>
