@@ -17,6 +17,7 @@
 Search: <input type="text" name="title"/>
 <input type="submit" value="Search Films" /><br>
 <a href="WebFilm?action=getAllFilms">List all Films</a>
+<a href="WebFilm?action=addFilmGET">Add Film</a>
 </form>
 </body>
 </html>

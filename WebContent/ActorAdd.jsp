@@ -19,7 +19,7 @@
 			<label for="firstName">First Name: </label><input type="text" style="text-transform: uppercase" name="firstName" id="firstName" pattern="[A-Za-z]*"/><br>
 			<label for="lastName">Last Name: </label><input type="text" style="text-transform: uppercase" name="lastName" id="lastName" pattern="[A-Za-z]*"/><br>
 			<input type="submit" name="submit" onclick="validateActorAdd()" value="Add Actor"/>
-			<input type="button" onclick="window.location='http://localhost:8080/RentalWeb/ActorManagement.jsp'" value="Cancel"/>
+			<input type="button" onclick="window.location='ActorManagement.jsp'" value="Cancel"/>
 		</fieldset>
 	</form>
   </body>

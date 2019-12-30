@@ -9,6 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.iandonaldson.data.FilmDaoImpl;
 import com.iandonaldson.data.Film;
+import com.iandonaldson.data.ActorDaoImpl;
+import com.iandonaldson.data.Actor;
+import java.util.Date;
+import java.util.List;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
 
 
 /**
@@ -40,6 +46,7 @@ public class WebFilm extends HttpServlet {
 		}
 		else {
 			FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
+			ActorDaoImpl actorDaoImpl = new ActorDaoImpl();
 			switch(request.getParameter("action")) {
 			case "getAllFilms":
 				request.getSession().setAttribute("filmList", filmDaoImpl.getAllFilms());
@@ -48,12 +55,12 @@ public class WebFilm extends HttpServlet {
 			case "getFilm":
 				filmIDParam = request.getParameter("id");
 				filmID = Integer.parseInt(filmIDParam);
-				film = filmDaoImpl.getFilm(filmID);
-				request.getSession().setAttribute("film", film);
+					request.getSession().setAttribute("film", film);
 				request.getSession().setAttribute("id", film.getId());
 				request.getSession().setAttribute("filmsActorList", film.getActorList());
 				request.getSession().setAttribute(isUpdated, "true");
 				request.getRequestDispatcher("Film.jsp").forward(request, response);
+			
 				break;
 			case "updateFilmGET":
 				filmIDParam = request.getParameter("id");
@@ -72,7 +79,31 @@ public class WebFilm extends HttpServlet {
 			case "manageFilms": 
 				request.getRequestDispatcher("FilmManagement.jsp").forward(request, response);
 				break;
-			
+			case "addFilmGET":
+				filmID = filmDaoImpl.getNewFilmID();
+				request.getSession().setAttribute("id", Integer.toString(filmID));
+				request.getRequestDispatcher("FilmAdd.jsp").forward(request, response);
+				break;
+			case "deleteFilmGET":
+				filmIDParam = request.getParameter("id");
+				filmID = Integer.parseInt(filmIDParam);
+				if (filmDaoImpl.deleteFilm(filmID)) {
+					request.getSession().setAttribute("filmList", filmDaoImpl.getAllFilms());
+					request.getRequestDispatcher("FilmList.jsp").forward(request, response);
+				} else {
+					request.getSession().setAttribute("delete", false);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+				}
+				break;
+			case "assocActorsGET":
+				filmIDParam = request.getParameter("id");
+				filmID = Integer.parseInt(filmIDParam);
+				film = filmDaoImpl.getFilm(filmID);
+				request.getSession().setAttribute("film", film);
+				request.getSession().setAttribute("actors", actorDaoImpl.getAllActors());
+				request.getSession().setAttribute("alreadyAssociated", film.getActorList());
+				request.getRequestDispatcher("AssocActorsToFilm.jsp").forward(request, response);
+				break;
 			
 			}
 		}
@@ -115,6 +146,57 @@ public class WebFilm extends HttpServlet {
 					request.getSession().setAttribute("filmList", filmDaoImpl.getFilmsByTitle(filmIDParam));
 					request.getRequestDispatcher("FilmList.jsp").forward(request, response);
 				}
+				break;
+			case "addFilmPOST":
+				filmIDParam = request.getParameter("id");
+				filmID = Integer.parseInt(filmIDParam);
+				String title = request.getParameter("title").toUpperCase();
+				String description = request.getParameter("description");
+				String rating = request.getParameter("rating").toUpperCase();
+				String specialFeatures = request.getParameter("specialFeatures");
+				
+				String languageIDParam = request.getParameter("languageID");
+				int languageID = Integer.parseInt(languageIDParam);
+				String rentalDurationParam = request.getParameter("rentalDuration");
+				int rentalDuration = Integer.parseInt(rentalDurationParam);
+				String lengthParam = request.getParameter("length");
+				int length = Integer.parseInt(lengthParam);
+				String rentalRateParam = request.getParameter("rentalRate");
+				double rentalRate = Double.parseDouble(rentalRateParam);
+				
+				java.sql.Date releaseYear = null;
+				try {
+					SimpleDateFormat fmt = new SimpleDateFormat("yyyy");
+					String releaseYearParam = request.getParameter("releaseYear");
+					Date parsed = fmt.parse(releaseYearParam);
+					releaseYear = new java.sql.Date(parsed.getTime());
+				} catch (ParseException e) {
+					e.printStackTrace();
+				}
+				
+				Film film = new Film(title, description, rating, specialFeatures, filmID, languageID, rentalDuration, length, rentalRate, releaseYear);
+				
+				boolean filmExists = filmDaoImpl.filmExists(film);
+				boolean addSuccessful = filmDaoImpl.addFilm(film);
+				if (filmExists) {
+					request.getSession().setAttribute("add", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+				} else {
+					if (addSuccessful) {
+						request.getSession().setAttribute("film", film);
+						request.getSession().setAttribute("id", film.getId());
+						request.getSession().setAttribute("filmsActorList", film.getActorList());
+						request.getRequestDispatcher("Film.jsp").forward(request, response);
+					} else {
+						request.getSession().setAttribute("add", true);
+						request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+					}
+				}
+				break;
+			case "assocActorsPOST":
+				filmIDParam = request.getParameter("id");
+				filmID = Integer.parseInt(filmIDParam);
+				
 				break;
 			}
 		}

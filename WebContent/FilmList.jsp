@@ -15,7 +15,11 @@
 <h1>List of Films</h1>
 <p>
 <c:forEach items="${filmList}" var="current">
-	<a href="WebFilm?action=getFilm&id=${current.id}">${current.title}</a><br>
+	<a href="WebFilm?action=getFilm&id=${current.id}">${current.title}</a>
+		<div>
+			<a href="WebFilm?action=updateFilmGET>&id=${current.id }">Update</a>
+			<a href="WebFilm?action=deleteFilmGET&id=${current.id }">Delete</a>
+		</div><br>
 </c:forEach>
 </p>
 </body>

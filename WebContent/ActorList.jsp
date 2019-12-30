@@ -14,10 +14,12 @@
 </head>
 <body>
 	<a href="WebActor?action=addActorGET" class="button">Add Actor</a>
-	<a href="WebActor?action=deleteActorGET" class="button" id="delete">Delete Actor</a>
 	<h1>List of Actors</h1>
 	<c:forEach items="${actorList}" var="current">
-		<a href="WebActor?action=getActor&id=${current.id}">${current.lastName}, ${current.firstName}</a><br>
+		<a href="WebActor?action=getActor&id=${current.id}">${current.lastName}, ${current.firstName}</a>
+		<a href="WebActor?action=deleteActorGET" class="button" id="delete">Delete</a>
+		<a href="WebActor?action=updateActorGET" class="button" id="delete">Update</a>
+		<br>
 	</c:forEach>
 </body>
 </html>
