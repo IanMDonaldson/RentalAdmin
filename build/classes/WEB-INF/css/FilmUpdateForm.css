@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+label {
+	text-align: right;
+	float: left;
+	width: 150px;
+	font-weight: bold;
+}
+input[name="title"] {
+	width: 20vw;
+}
+input[name="description"] {
+	width: 75vw;	
+}
+input[name="rentalRate"] {
+	width: 4vw;
+}
+input[name="replacementCost"] {
+	width: 6vw;
+}
+input[name="length"] {
+	width: 2vw;
+}
+.button {
+	margin-left: 150px;
+	background: #37425e;
+	color: white;
+}
+
+.button:hover {
+	background: #c0c3ca;
+	color: white;
+}

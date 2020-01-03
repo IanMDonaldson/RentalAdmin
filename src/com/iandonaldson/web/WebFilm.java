@@ -11,6 +11,9 @@ import com.iandonaldson.data.FilmDaoImpl;
 import com.iandonaldson.data.Film;
 import com.iandonaldson.data.ActorDaoImpl;
 import com.iandonaldson.data.Actor;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.text.SimpleDateFormat;
@@ -100,8 +103,8 @@ public class WebFilm extends HttpServlet {
 				filmID = Integer.parseInt(filmIDParam);
 				film = filmDaoImpl.getFilm(filmID);
 				request.getSession().setAttribute("film", film);
-				request.getSession().setAttribute("actors", actorDaoImpl.getAllActors());
-				request.getSession().setAttribute("alreadyAssociated", film.getActorList());
+				request.getSession().setAttribute("actorsNotAssoc", actorDaoImpl.getActorsNotAssocWFilm(film));
+				request.getSession().setAttribute("actorsAssoc", film.getActorList());
 				request.getRequestDispatcher("AssocActorsToFilm.jsp").forward(request, response);
 				break;
 			
@@ -153,7 +156,7 @@ public class WebFilm extends HttpServlet {
 				String title = request.getParameter("title").toUpperCase();
 				String description = request.getParameter("description");
 				String rating = request.getParameter("rating").toUpperCase();
-				String specialFeatures = request.getParameter("specialFeatures");
+				//String[] specialFeatures = request.getParameterValues("specialFeatures");
 				
 				String languageIDParam = request.getParameter("languageID");
 				int languageID = Integer.parseInt(languageIDParam);
@@ -173,8 +176,8 @@ public class WebFilm extends HttpServlet {
 				} catch (ParseException e) {
 					e.printStackTrace();
 				}
-				
-				Film film = new Film(title, description, rating, specialFeatures, filmID, languageID, rentalDuration, length, rentalRate, releaseYear);
+				//List<String> specFeatures = new ArrayList<String>(Arrays.asList(specialFeatures));
+				Film film = new Film(title, description, rating, filmID, languageID, rentalDuration, length, rentalRate, releaseYear);
 				
 				boolean filmExists = filmDaoImpl.filmExists(film);
 				boolean addSuccessful = filmDaoImpl.addFilm(film);
@@ -196,7 +199,17 @@ public class WebFilm extends HttpServlet {
 			case "assocActorsPOST":
 				filmIDParam = request.getParameter("id");
 				filmID = Integer.parseInt(filmIDParam);
-				
+				film = filmDaoImpl.getFilm(filmID);
+				String[] assocActors = request.getParameterValues("hiddenActors");
+				if (filmDaoImpl.assocActors(film, assocActors)) {
+					request.getSession().setAttribute("filmList", filmDaoImpl.getAllFilms());
+					request.getSession().setAttribute("id", film.getId());
+					request.getSession().setAttribute("filmsActorList", film.getActorList());
+					request.getRequestDispatcher("FilmList.jsp").forward(request, response);
+				} else {
+					request.getSession().setAttribute("update", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
+				}
 				break;
 			}
 		}
