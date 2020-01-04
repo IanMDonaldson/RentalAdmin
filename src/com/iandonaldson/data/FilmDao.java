@@ -5,14 +5,28 @@ package com.iandonaldson.data;
  * 1 – List all movies and actors
  * 2 – List all stores and addresses
  * 3 – List all stores and staff.*/
+import java.sql.SQLException;
 import java.util.List;
 
 public interface FilmDao {
+
+	
+	public boolean updateFilm(Film film);
+	public boolean searchFilmByTitle(String title);
+	public boolean deleteFilm(int id);
+	public boolean filmExists(Film film);
+	public boolean addFilm(Film film);
+
+	public Film getFilm(int Id);
+
+	public int getNewFilmID();
+
 	public List<Film> setFilmsForActor(Actor actor);//used by actorDaoImpl to set its films
 	public List<Film> getAllFilms();
 	public List<Film> getFilmsByTitle(String title);
-	public Film getFilm(int Id);
-	public boolean updateFilm(Film film);
-	public boolean searchFilmByTitle(String title);
-	public boolean deleteFilm(int Id);
+	//calls delActorAssoc, converts newlyAssocACtorIDs to StringArray
+	public boolean assocActors(Film film, String[] newlyAssocActorIDs);
+
+	public boolean delActorAssocFromFilm(Film film);
 }
+

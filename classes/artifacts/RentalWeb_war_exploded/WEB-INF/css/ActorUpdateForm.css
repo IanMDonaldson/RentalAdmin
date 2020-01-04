@@ -1,0 +1,26 @@
+@charset "UTF-8";
+label {
+	text-align: right;
+	float: left;
+	width: 150px;
+	font-weight: bold;
+}
+
+input[name="firstName"] {
+	width: 20vw;
+}
+input[name="lastName"] {
+	width: 20vw;
+}
+.button {
+	text-decoration: none;
+	padding: 4px;
+	border-radius: 16px;
+	margin-left: 150px;
+	background: #37425e;
+	color: white;
+}
+.button:hover {
+	background: #c0c3ca;
+	color: white;
+}

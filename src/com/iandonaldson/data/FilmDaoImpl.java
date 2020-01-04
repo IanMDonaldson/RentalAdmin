@@ -4,8 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class FilmDaoImpl implements FilmDao {
 	
@@ -26,9 +25,9 @@ public class FilmDaoImpl implements FilmDao {
 				film.setId(rs.getInt("film_id"));
 				film.setTitle(rs.getString("title"));
 				film.setDescription(rs.getNString("description"));
-				film.setReleaseDate(rs.getDate("release_year"));
+				film.setReleaseYear(rs.getDate("release_year"));
 				film.setRating(rs.getString("rating"));
-				film.setLanguageId(rs.getInt("language_id"));
+				film.setLanguageID(rs.getInt("language_id"));
 				film.setRentalDuration(rs.getInt("rental_duration"));
 				film.setLength(rs.getInt("length"));
 				film.setReplacementCost(rs.getDouble("replacement_cost"));
@@ -54,9 +53,9 @@ public class FilmDaoImpl implements FilmDao {
 				film.setId(rs.getInt("film_id"));
 				film.setTitle(rs.getString("title"));
 				film.setDescription(rs.getNString("description"));
-				film.setReleaseDate(rs.getDate("release_year"));
+				film.setReleaseYear(rs.getDate("release_year"));
 				film.setRating(rs.getString("rating"));
-				film.setLanguageId(rs.getInt("language_id"));
+				film.setLanguageID(rs.getInt("language_id"));
 				film.setRentalDuration(rs.getInt("rental_duration"));
 				film.setLength(rs.getInt("length"));
 				film.setReplacementCost(rs.getDouble("replacement_cost"));
@@ -129,9 +128,9 @@ public class FilmDaoImpl implements FilmDao {
 				film.setId(rs.getInt("film_id"));
 				film.setTitle(rs.getString("title"));
 				film.setDescription(rs.getString("description"));
-				film.setReleaseDate(rs.getDate("release_year"));
+				film.setReleaseYear(rs.getDate("release_year"));
 				film.setLength(rs.getInt("length"));
-				film.setLanguageId(rs.getInt("language_id"));
+				film.setLanguageID(rs.getInt("language_id"));
 				film.setRentalDuration(rs.getInt("rental_duration"));
 				film.setRentalRate(rs.getDouble("rental_rate"));
 				film.setReplacementCost(rs.getDouble("replacement_cost"));
@@ -179,7 +178,7 @@ public class FilmDaoImpl implements FilmDao {
 		
 		return isUpdated;
 	}
-	
+
 	@Override
 	public boolean searchFilmByTitle(String title) {
 		boolean validSearch = false;
@@ -202,8 +201,157 @@ public class FilmDaoImpl implements FilmDao {
 	}
 
 	@Override
-	public boolean deleteFilm(int Id) {
+	public boolean deleteFilm(int id) {
+		boolean filmDeleted = false;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("DELETE FROM film "
+					+ "WHERE film_id = ?;");
+			ps.setInt(1, id);
+			int i = ps.executeUpdate();
+			if (i != 0) {
+				filmDeleted = true;
+			}
+			ps.close();
+			conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return filmDeleted;
+	}
+	@Override
+	public boolean filmExists(Film film) {
+		boolean filmExists = true;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("Select * from film "
+				+ "where (title LIKE CONCAT('%', ?, '%')) OR film_id = ?;");
+			ps.setString(1, film.getTitle());
+			ps.setInt(2, film.getId());
+			ResultSet rs = ps.executeQuery();
+			if (rs != null) {
+				filmExists = false;
+			}
+			ps.close();
+			conn.close();
+			return filmExists;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return filmExists;
+	}
+	@Override
+	public boolean addFilm(Film film) {
+		boolean isAddSuccessful = false;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("INSERT INTO film(title, description, release_year, language_id, rental_duration, "
+					+ "rental_rate, length, replacement_cost, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);");
+			ps.setString(1, film.getTitle());
+			ps.setString(2, film.getDescription());
+			ps.setDate(3, film.getReleaseYear());
+			ps.setInt(4, film.getLanguageID());
+			ps.setInt(5, film.getRentalDuration());
+			ps.setDouble(6, film.getRentalRate());
+			ps.setInt(7, film.getLength());
+			ps.setDouble(8, film.getReplacementCost());
+			ps.setString(9, film.getRating());
+			int rowChanged = ps.executeUpdate();
+			if (rowChanged > 0) {
+				isAddSuccessful = true;
+			}
+			ps.close();
+			conn.close();
+
+			return isAddSuccessful; //false
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return isAddSuccessful;
+	}
+	@Override
+	public int getNewFilmID() {
+		int newFilmID = -1;
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("select * from sakila.film F "
+					+ "order by F.film_id desc limit 1;");
+			ResultSet rs = ps.executeQuery();
+			rs.next();
+			newFilmID = rs.getInt("film_id");
+			rs.close();
+			ps.close();
+			conn.close();
+			return newFilmID;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return newFilmID;
+	}
+
+	@Override
+	public boolean assocActors(Film film, String[] newlyAssocActorIDs) {
+		/*delete already associated actors with delActorAssocFromFilm first, then
+		* just iterate through the list of actorID's given by newlyAssocActorIDs adding every film_actor
+		* value to the SQL statement. Then setActorList for the film object*/
+		List<Actor> newActors = new LinkedList<Actor>();
+		List<String> actorIDs = new ArrayList<String>(Arrays.asList(newlyAssocActorIDs));
+		StringBuilder statement = new StringBuilder("INSERT INTO film_actor(actor_id, film_id) VALUES ");
+
+		int filmID = film.getId();
+		int j = 1;
+		if (delActorAssocFromFilm(film)) {
+			for (int i = 0; i < actorIDs.size()-1; i++ ) {
+				statement.append("(?, ?), ");
+			}
+			statement.append("(?, ?);");
+
+			Connection conn = ConnectionFactory.getConnection();
+			int rowsAffected;
+			try {
+				PreparedStatement ps = conn.prepareStatement(statement.toString());
+				for (String actorID : actorIDs) {
+					ps.setInt(j, Integer.parseInt(actorID));
+					j += 1;
+					ps.setInt(j, filmID);
+					j += 1;
+				}
+				rowsAffected = ps.executeUpdate();
+				if (rowsAffected > 0 ) {
+					ActorDaoImpl actorDaoImpl = new ActorDaoImpl();
+					List<Actor> actorList = actorDaoImpl.setActorsForFilm(film);
+					film.setActorList(actorList);
+					ps.close();
+					conn.close();
+					return true;
+				}
+			} catch (SQLException e ) {
+				e.printStackTrace();
+			}
+
+		}
 		return false;
 	}
 
+	@Override
+	public boolean delActorAssocFromFilm(Film film) {
+		boolean deleteSuccessful = false;
+		List<Actor> actorList = film.getActorList();
+		Connection conn = ConnectionFactory.getConnection();
+		try {
+			PreparedStatement ps = conn.prepareStatement("DELETE FROM sakila.film_actor " +
+					"WHERE film_id = ?;");
+			ps.setInt(1, film.getId());
+			int rowChanged = ps.executeUpdate();
+			if (rowChanged > 0) {
+				deleteSuccessful = true;
+			}
+			ps.close();
+			conn.close();
+			return deleteSuccessful;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return deleteSuccessful;
+	}
 }

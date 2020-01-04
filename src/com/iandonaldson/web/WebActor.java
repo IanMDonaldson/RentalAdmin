@@ -84,14 +84,13 @@ public class WebActor extends HttpServlet {
 				 * eg, */
 				List<Actor> actors = new LinkedList<Actor>();
 				actors = actorDaoImpl.getRemovableActors();
+				
 				if (actors == null) {
-					request.getSession().setAttribute("add", false);
-					request.getSession().setAttribute("delete", false);
-					request.getSession().setAttribute("update", false);
-					request.getSession().setAttribute("noActorsToDelete", true);
+					request.getSession().setAttribute("delete", true);
+					request.getRequestDispatcher("FailurePage.jsp").forward(request, response);
 				} else {
-					request.getSession().setAttribute("removableActors", actorDaoImpl.getRemovableActors());
-					request.getRequestDispatcher("ActorDelete.jsp").forward(request, response);
+					request.getSession().setAttribute("actors", actorDaoImpl.getAllActors());
+					request.getRequestDispatcher("ActorList.jsp").forward(request, response);
 				}
 				break;
 			}
