@@ -6,64 +6,302 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5412bb89-5ecb-440f-9fe0-466f974082a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RentalWeb_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RentalWeb.eml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RentalWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/css/AssocActorsToFilm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/css/FilmList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomcat1/tomcat1.iml" afterDir="false" />
+    <list default="true" id="6a7ffa9a-926d-4dab-bec3-6c31a13749f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Actor.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/AssocActorsToFilm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Film.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/MenuBar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/Home.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebCustomer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/MenuBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/nothing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/Home.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebCustomer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Actor.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/AssocActorsToFilm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/CustomerUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Film.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/FilmList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/FilmUpdate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/MenuBar.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/AssocActorsToFilm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/AssocActorsToFilm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/FilmAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/FilmAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/FilmList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/FilmList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/AssocActorsToFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/AssocActorsToFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Actor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ConnectionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Staff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/MenuBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/scripts/nothing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RentalWeb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RentalWeb_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab54af9-2fb4-43d4-b085-bf878aee23ed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a010303-c66b-44ef-acaf-0500c8071388.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab54af9-2fb4-43d4-b085-bf878aee23ed/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a010303-c66b-44ef-acaf-0500c8071388/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ab54af9-2fb4-43d4-b085-bf878aee23ed/storage_v2/_src_/schema/sakila.oXLGyQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a010303-c66b-44ef-acaf-0500c8071388/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalWeb.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RentalWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RentalWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/About.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Actor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/ActorAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/ActorList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/ActorManagement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/ActorUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorUpdate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/AssocActorsToFilm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/CustomerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/CustomerList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/CustomerManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/CustomerManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/CustomerUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/FailurePage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Film.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/FilmAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/FilmList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/FilmManagement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/FilmUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/Menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/MenuBar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/Actor.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/Actor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/ActorDelete.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/ActorDelete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/ActorList.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/ActorList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/ActorUpdateForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/ActorUpdateForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/AssocActorsToFilm.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/AssocActorsToFilm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/FilmAdd.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/FilmAdd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/FilmList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/FilmUpdateForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/FilmUpdateForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/css/MenuBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/AssocActorsToFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/AssocActorsToFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/filmAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/filmAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/validateActorAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/validateActorAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/RentalWeb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/About.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/About.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Actor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ActorAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ActorList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ActorManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/ActorUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/AssocActorsToFilm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/CustomerList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/CustomerManagement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/CustomerUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/FailurePage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Film.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/FilmAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FilmAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/FilmList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/FilmManagement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/FilmUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/META-INF/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/META-INF/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/MenuBar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/Actor.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/Actor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/ActorDelete.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/ActorDelete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/ActorList.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/ActorList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/ActorUpdateForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/ActorUpdateForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/AssocActorsToFilm.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/AssocActorsToFilm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/FilmAdd.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/FilmAdd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/FilmList.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/FilmList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/FilmUpdateForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/FilmUpdateForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/css/MenuBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/scripts/AssocActorsToFilm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/scripts/filmAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/filmAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/WEB-INF/scripts/validateActorAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/validateActorAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorLNameComparer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorLNameComparer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorLNameComparer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorLNameComparer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerLNameComparer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerLNameComparer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerLNameComparer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerLNameComparer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LanguageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LanguageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LanguageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LanguageDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LocationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LocationDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/PaymentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/PaymentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/PaymentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/PaymentDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Rental.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Rental.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/RentalDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/RentalDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StaffDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StaffDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StoreDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StoreDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/WebActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebActor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/WebCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/WebFilm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebFilm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/About.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/About.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/Actor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/ActorAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/ActorList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/ActorManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/ActorUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorUpdate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/AssocActorsToFilm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/Customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/CustomerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/CustomerManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/CustomerUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/FailurePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FailurePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/Film.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/FilmAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/FilmList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/FilmManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/FilmUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/Menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/META-INF/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/META-INF/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/MenuBar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/About.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/Actor.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/ActorAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/ActorList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/ActorManagement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/ActorUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/AssocActorsToFilm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/Customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/CustomerList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/CustomerManagement.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/CustomerUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/FailurePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FailurePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/Film.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/FilmAdd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/FilmList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/FilmManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FilmManagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/FilmUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/Menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/META-INF/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/META-INF/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/MenuBar.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/Actor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/ActorDelete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/ActorList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/ActorUpdateForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/AssocActorsToFilm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/FilmAdd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/FilmList.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/FilmList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/FilmUpdateForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/css/MenuBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/scripts/AssocActorsToFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/AssocActorsToFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/scripts/filmAdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/WEB-INF/scripts/validateActorAdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorLNameComparer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorLNameComparer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorLNameComparer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorLNameComparer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/CategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ConnectionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/CustomerDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerLNameComparer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/CustomerLNameComparer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/CustomerLNameComparer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/CustomerLNameComparer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/FilmDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/FilmDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LanguageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/LanguageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LanguageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/LanguageDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LocationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/LocationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/LocationDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/LocationDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/PaymentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/PaymentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/PaymentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/PaymentDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Rental.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Rental.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/RentalDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/RentalDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StaffDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/StaffDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StaffDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/StaffDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/StoreDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/StoreDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/StoreDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebActor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebCustomer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebFilm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebFilm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/Actor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/ActorDelete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/ActorList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/ActorUpdateForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/AssocActorsToFilm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/FilmAdd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/FilmList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/FilmUpdateForm.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/css/MenuBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/lib/jdbc-mysql.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/scripts/AssocActorsToFilm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/scripts/filmAdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/scripts/validateActorAdd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/WebCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/WebCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="272" />
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -76,13 +314,19 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -92,16 +336,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsBowerSettings">
-    <node-interpreter value="project" />
-    <bower-package value="" />
-    <bower.json value="" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -110,47 +350,51 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="1VgvYTOU3fNAHq6R8yXcA41bhBX" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1W0Sx84iCzw8GoSE259BTyao9yp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent" />
+    <property name="findjar.last.used.dir" value="$USER_HOME$/tomcat9/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/scripts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.07434553" />
-    <property name="project.structure.side.proportion" value="0.0863477" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="project.structure.proportion" value="0.16711111" />
+    <property name="project.structure.side.proportion" value="0.113250256" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="excludedTypes">
-      <set>
-        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
-      </set>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Resources" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/icedtea-bin-8/jre" show_console_on_std_err="true" show_console_on_std_out="true">
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+    <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/RentalWeb_war_exploded/Menu.jsp" />
+      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="RentalWeb:war exploded">
@@ -160,108 +404,15 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_RentalWeb" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file enabled="true" id="Tomcat Host Manager" />
-      <predefined_log_file enabled="true" id="Tomcat Localhost Access" />
-      <extension name="coverage" sample_coverage="false">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="WEB-INF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="36439" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/startup.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/shutdown.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="RentalWeb:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/icedtea-bin-8/jre">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/RentalWeb_war_exploded/" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="RentalWeb:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/RentalWeb_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_RentalWeb" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_RentalWeb_4" />
       </server-settings>
       <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <extension name="coverage" sample_coverage="false">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="WEB-INF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="36439" />
+        <option name="DEBUG_PORT" value="33335" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -296,22 +447,17 @@
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/startup.sh" />
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </STARTUP>
         <SHUTDOWN>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/shutdown.sh" />
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
-        <EnvironmentVariables>
-          <option name="NAME" value="" />
-          <option name="VALUE" value="" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -325,8 +471,19 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.123556554" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -338,20 +495,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5412bb89-5ecb-440f-9fe0-466f974082a3" name="Default Changelist" comment="" />
-      <created>1577687599841</created>
+      <changelist id="6a7ffa9a-926d-4dab-bec3-6c31a13749f4" name="Default Changelist" comment="" />
+      <created>1578285262899</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1577687599841</updated>
-      <workItem from="1577687609739" duration="421000" />
-      <workItem from="1577757382870" duration="3344000" />
-      <workItem from="1577761356810" duration="546000" />
-      <workItem from="1577762500859" duration="4632000" />
-      <workItem from="1577767271668" duration="3585000" />
-      <workItem from="1577838173175" duration="9811000" />
-      <workItem from="1577934228107" duration="4328000" />
-      <workItem from="1577939928668" duration="12609000" />
-      <workItem from="1578029781903" duration="2492000" />
+      <updated>1578285262899</updated>
+      <workItem from="1578285264265" duration="134000" />
+      <workItem from="1578285410624" duration="2342000" />
+      <workItem from="1578287816778" duration="4610000" />
+      <workItem from="1578293008542" duration="78000" />
+      <workItem from="1578293882188" duration="2613000" />
+      <workItem from="1578363191805" duration="4896000" />
+      <workItem from="1578421294562" duration="342000" />
+      <workItem from="1578422786426" duration="4902000" />
+      <workItem from="1578450610701" duration="707000" />
+      <workItem from="1578451408633" duration="8822000" />
+      <workItem from="1578525897751" duration="1823000" />
     </task>
     <servers />
   </component>
@@ -359,203 +518,245 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="453" y="114" width="1004" height="835" key="#Custom_Plugin_Repositories" timestamp="1577762755376">
+    <state x="37" y="56" width="875" height="951" key="#MenuBar.jsp" timestamp="1578451611709">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="453" y="114" width="1004" height="835" key="#Custom_Plugin_Repositories/0.0.1920.1080@0.0.1920.1080" timestamp="1577762755376" />
-    <state x="453" y="114" width="1004" height="835" key="#Inspections" timestamp="1577920996936">
+    <state x="37" y="56" width="875" height="951" key="#MenuBar.jsp/0.0.1920.1080@0.0.1920.1080" timestamp="1578451611709" />
+    <state x="441" y="-98" width="998" height="831" key="#Project_Structure" timestamp="1578526372657">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="453" y="114" width="1004" height="835" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1577920996936" />
-    <state x="553" y="195" width="804" height="673" key="#Notifications" timestamp="1577688019318">
+    <state x="441" y="-98" width="998" height="831" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1578526372657" />
+    <state x="-2" y="11" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578527009263">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="553" y="195" width="804" height="673" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1577688019318" />
-    <state x="921" y="-13" width="995" height="1045" key="#Project_Structure" timestamp="1578031933606">
+    <state x="-2" y="11" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578527009263" />
+    <state x="446" y="155" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1578285698996">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="921" y="-13" width="995" height="1045" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1578031933606" />
-    <state x="453" y="114" width="1004" height="835" key="#SQL_Dialects" timestamp="1577763968922">
+    <state x="446" y="155" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578285698996" />
+    <state x="476" y="-6" width="1004" height="835" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1578526697211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="453" y="114" width="1004" height="835" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1577763968922" />
-    <state x="37" y="41" width="875" height="980" key="#Tomcat9" timestamp="1578032942681">
+    <state x="476" y="-6" width="1004" height="835" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1080@0.0.1920.1080" timestamp="1578526697211" />
+    <state x="667" y="380" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1578289149706">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="37" y="41" width="875" height="980" key="#Tomcat9/0.0.1920.1080@0.0.1920.1080" timestamp="1578032942681" />
-    <state x="411" y="47" width="875" height="951" key="#Tomcat_9.0.24" timestamp="1577837733470">
+    <state x="667" y="380" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578289149706" />
+    <state x="556" y="300" width="786" height="342" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578459638665">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="411" y="47" width="875" height="951" key="#Tomcat_9.0.24/0.0.1920.1080@0.0.1920.1080" timestamp="1577837733470" />
-    <state x="67" y="231" width="804" height="673" key="#Tomcat_Server" timestamp="1578032759058">
+    <state x="556" y="300" width="786" height="342" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1578459638665" />
+    <state x="-2" y="64" width="1914" height="934" key="CommitChangelistDialog2" timestamp="1578527644076">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="67" y="231" width="804" height="673" key="#Tomcat_Server/0.0.1920.1080@0.0.1920.1080" timestamp="1578032759058" />
-    <state x="-2" y="11" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578033211278">
+    <state x="-2" y="64" width="1914" height="934" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578527644076" />
+    <state width="569" height="585" key="DebuggerActiveHint" timestamp="1578451809651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-2" y="11" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578033211278" />
-    <state x="718" y="132" width="466" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1577903363683">
+    <state width="569" height="585" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1578451809651" />
+    <state x="383" y="7" width="1120" height="620" key="FileChooserDialogImpl" timestamp="1578526355674">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="718" y="132" width="466" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577903363683" />
-    <state x="875" y="11" width="653" height="539" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1578031991146">
+    <state x="383" y="7" width="1120" height="620" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578526355674" />
+    <state width="759" height="570" key="GridCell.Tab.0.bottom" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="875" y="11" width="653" height="539" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578031991146" />
-    <state x="620" y="231" width="654" height="501" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578031956039">
+    <state width="759" height="570" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.0.center" timestamp="1578527471588">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="620" y="231" width="654" height="501" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578031956039" />
-    <state x="444" y="131" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577762079602">
+    <state width="759" height="570" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471588" />
+    <state width="759" height="570" key="GridCell.Tab.0.left" timestamp="1578527471588">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="444" y="131" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577762079602" />
-    <state x="790" y="425" width="330" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577759425112">
+    <state width="759" height="570" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471588" />
+    <state width="759" height="570" key="GridCell.Tab.0.right" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="790" y="425" width="330" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577759425112" />
-    <state x="1280" y="35" width="640" height="1045" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1578032131557">
+    <state width="759" height="570" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.1.bottom" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1280" y="35" width="640" height="1045" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1080@0.0.1920.1080" timestamp="1578032131557" />
-    <state x="1165" y="428" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1577838894363">
+    <state width="759" height="570" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.1.center" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1165" y="428" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577838894363" />
-    <state x="536" y="165" width="828" height="680" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1577759422437">
+    <state width="759" height="570" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.1.left" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="536" y="165" width="828" height="680" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577759422437" />
-    <state x="787" y="134" width="328" height="698" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1577766506971">
+    <state width="759" height="570" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.1.right" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="787" y="134" width="328" height="698" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577766506971" />
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577990862694">
+    <state width="759" height="570" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.2.bottom" timestamp="1578527471592">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577990862694" />
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1577920662175">
+    <state width="759" height="570" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471592" />
+    <state width="759" height="570" key="GridCell.Tab.2.center" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577920662175" />
-    <state x="456" y="103" width="997" height="857" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1577944558454">
+    <state width="759" height="570" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="759" height="570" key="GridCell.Tab.2.left" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="456" y="103" width="997" height="857" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577944558454" />
-    <state x="628" y="300" width="770" height="366" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577944591288">
+    <state width="759" height="570" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="759" height="570" key="GridCell.Tab.2.right" timestamp="1578527471592">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="628" y="300" width="770" height="366" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1577944591288" />
-    <state x="627" y="196" width="642" height="570" key="EnvironmentVariablesDialog" timestamp="1577764143467">
+    <state width="759" height="570" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471592" />
+    <state width="759" height="570" key="GridCell.Tab.3.bottom" timestamp="1578527471590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="627" y="196" width="642" height="570" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577764143467" />
-    <state x="206" y="-242" width="1120" height="510" key="FileChooserDialogImpl" timestamp="1578033228154">
+    <state width="759" height="570" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471590" />
+    <state width="759" height="570" key="GridCell.Tab.3.center" timestamp="1578527471590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="206" y="-242" width="1120" height="510" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578033228154" />
-    <state width="1864" height="264" key="GridCell.Tab.0.bottom" timestamp="1578033235224">
+    <state width="759" height="570" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471590" />
+    <state width="759" height="570" key="GridCell.Tab.3.left" timestamp="1578527471589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235224" />
-    <state width="1864" height="264" key="GridCell.Tab.0.center" timestamp="1578033235224">
+    <state width="759" height="570" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471589" />
+    <state width="759" height="570" key="GridCell.Tab.3.right" timestamp="1578527471590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235224" />
-    <state width="1864" height="264" key="GridCell.Tab.0.left" timestamp="1578033235223">
+    <state width="759" height="570" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471590" />
+    <state width="759" height="570" key="GridCell.Tab.4.bottom" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235223" />
-    <state width="1864" height="264" key="GridCell.Tab.0.right" timestamp="1578033235224">
+    <state width="759" height="570" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="759" height="570" key="GridCell.Tab.4.center" timestamp="1578527471590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235224" />
-    <state width="1278" height="263" key="GridCell.Tab.1.bottom" timestamp="1578029741598">
+    <state width="759" height="570" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471590" />
+    <state width="759" height="570" key="GridCell.Tab.4.left" timestamp="1578527471590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741598" />
-    <state width="1278" height="263" key="GridCell.Tab.1.center" timestamp="1578029741597">
+    <state width="759" height="570" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471590" />
+    <state width="759" height="570" key="GridCell.Tab.4.right" timestamp="1578527471590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741597" />
-    <state width="1278" height="263" key="GridCell.Tab.1.left" timestamp="1578029741597">
+    <state width="759" height="570" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471590" />
+    <state width="759" height="570" key="GridCell.Tab.5.bottom" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741597" />
-    <state width="1278" height="263" key="GridCell.Tab.1.right" timestamp="1578029741598">
+    <state width="759" height="570" key="GridCell.Tab.5.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="759" height="570" key="GridCell.Tab.5.center" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741598" />
-    <state width="1278" height="263" key="GridCell.Tab.2.bottom" timestamp="1578029741599">
+    <state width="759" height="570" key="GridCell.Tab.5.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="759" height="570" key="GridCell.Tab.5.left" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741599" />
-    <state width="1278" height="263" key="GridCell.Tab.2.center" timestamp="1578029741599">
+    <state width="759" height="570" key="GridCell.Tab.5.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="759" height="570" key="GridCell.Tab.5.right" timestamp="1578527471591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741599" />
-    <state width="1278" height="263" key="GridCell.Tab.2.left" timestamp="1578029741598">
+    <state width="759" height="570" key="GridCell.Tab.5.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578527471591" />
+    <state width="1456" height="570" key="GridCell.Tab.6.bottom" timestamp="1578462697678">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741598" />
-    <state width="1278" height="263" key="GridCell.Tab.2.right" timestamp="1578029741599">
+    <state width="1456" height="570" key="GridCell.Tab.6.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578462697678" />
+    <state width="1456" height="570" key="GridCell.Tab.6.center" timestamp="1578462697677">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741599" />
-    <state x="785" y="-61" width="1129" height="1045" key="SettingsEditor" timestamp="1578033231005">
+    <state width="1456" height="570" key="GridCell.Tab.6.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578462697677" />
+    <state width="1456" height="570" key="GridCell.Tab.6.left" timestamp="1578462697676">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="785" y="-61" width="1129" height="1045" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578033231005" />
-    <state x="721" y="270" width="468" height="522" key="VcsDiffUtil.ChangesDialog" timestamp="1577759019193">
+    <state width="1456" height="570" key="GridCell.Tab.6.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578462697676" />
+    <state width="1456" height="570" key="GridCell.Tab.6.right" timestamp="1578462697678">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="721" y="270" width="468" height="522" key="VcsDiffUtil.ChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577759019193" />
-    <state x="652" y="163" width="593" height="592" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578012836679">
+    <state width="1456" height="570" key="GridCell.Tab.6.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578462697678" />
+    <state width="1456" height="570" key="GridCell.Tab.7.bottom" timestamp="1578462576557">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="652" y="163" width="593" height="592" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1080@0.0.1920.1080" timestamp="1578012836679" />
-    <state x="983" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1578094438301">
+    <state width="1456" height="570" key="GridCell.Tab.7.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576557" />
+    <state width="1456" height="570" key="GridCell.Tab.7.center" timestamp="1578462576554">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="983" y="169" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578094438301" />
-    <state x="531" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1577943346971">
+    <state width="1456" height="570" key="GridCell.Tab.7.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576554" />
+    <state width="1456" height="570" key="GridCell.Tab.7.left" timestamp="1578462576553">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="531" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577943346971" />
-    <state x="579" y="325" width="751" height="413" key="git4idea.merge.GitPullDialog" timestamp="1577758980578">
+    <state width="1456" height="570" key="GridCell.Tab.7.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576553" />
+    <state width="1456" height="570" key="GridCell.Tab.7.right" timestamp="1578462576555">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="579" y="325" width="751" height="413" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577758980578" />
-    <state x="681" y="398" width="547" height="266" key="git4idea.rebase.GitRebaseDialog" timestamp="1577759036648">
+    <state width="1456" height="570" key="GridCell.Tab.7.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576555" />
+    <state width="380" height="551" key="HiddenNamespacesPopup" timestamp="1578287470909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="681" y="398" width="547" height="266" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577759036648" />
-    <state width="750" height="530" key="javadoc.popup" timestamp="1577845539264">
+    <state width="380" height="551" key="HiddenNamespacesPopup/0.0.1920.1080@0.0.1920.1080" timestamp="1578287470909" />
+    <state x="582" y="184" width="745" height="694" key="MultipleFileMergeDialog" timestamp="1578527712524">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="750" height="530" key="javadoc.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577845539264" />
-    <state x="123" y="99" width="1660" height="816" key="new project wizard" timestamp="1577758920496">
+    <state x="582" y="184" width="745" height="694" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578527712524" />
+    <state x="-2" y="-71" width="1914" height="1041" key="SettingsEditor" timestamp="1578526614595">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="123" y="99" width="1660" height="816" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1577758920496" />
-    <state x="623" y="265" width="874" height="678" key="search.everywhere.popup" timestamp="1578011833803">
+    <state x="-2" y="-71" width="1914" height="1041" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578526614595" />
+    <state x="-2" y="206" width="1004" height="650" key="Vcs.Push.Dialog.v2" timestamp="1578527598671">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="265" width="874" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578011833803" />
+    <state x="-2" y="206" width="1004" height="650" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578527598671" />
+    <state width="960" height="522" key="XDebugger.FullValuePopup" timestamp="1578463150681">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="960" height="522" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1578463150681" />
+    <state x="490" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1578525900780">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="490" y="250" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578525900780" />
+    <state x="491" y="341" width="916" height="237" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578366135915">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="491" y="341" width="916" height="237" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1578366135915" />
+    <state x="51" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1578462924500">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="51" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578462924500" />
+    <state x="92" y="23" width="745" height="776" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578462233458">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="23" width="745" height="776" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1578462233458" />
+    <state x="-4" y="189" width="1179" height="636" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578462951568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-4" y="189" width="1179" height="636" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1578462951568" />
+    <state x="799" y="182" width="1121" height="750" key="find.popup" timestamp="1578377021384">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="799" y="182" width="1121" height="750" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578377021384" />
+    <state x="84" y="160" width="778" height="695" key="git4idea.branch.GitSmartOperationDialog" timestamp="1578527704076">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="84" y="160" width="778" height="695" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578527704076" />
+    <state x="17" y="26" width="1895" height="1011" key="new project wizard" timestamp="1578293076676">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="17" y="26" width="1895" height="1011" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1578293076676" />
+    <state x="42" y="45" width="874" height="1034" key="search.everywhere.popup" timestamp="1578526638734">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="42" y="45" width="874" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578526638734" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java</url>
-          <line>79</line>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/web/scripts/AssocActorsToFilm.js</url>
+          <line>3</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/web/scripts/AssocActorsToFilm.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RentalWeb$Tomcat_9_0_24.ic" NAME="Tomcat 9.0.24 Coverage Results" MODIFIED="1577837384763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

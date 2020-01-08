@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="RentalWeb:war exploded">
-    <output-path>$PROJECT_DIR$/classes/artifacts/RentalWeb_war_exploded</output-path>
+  <artifact type="exploded-war" build-on-make="true" name="RentalWeb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="RentalWeb/web/Web" />
       <element id="directory" name="WEB-INF">
@@ -8,11 +8,18 @@
           <element id="module-output" name="RentalWeb" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="module" name="jstl-1.2.jar" module-name="RentalWeb" />
-          <element id="library" level="module" name="jdbc-mysql.jar" module-name="RentalWeb" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.18" />
+          <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/mysql-connector-java-8.0.18.jar" />
+          <element id="file-copy" path="$USER_HOME$/Downloads/jstl-1.2.jar" />
         </element>
       </element>
-      <element id="dir-copy" path="$PROJECT_DIR$/WebContent" />
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/web/css" />
+      </element>
+      <element id="directory" name="scripts">
+        <element id="dir-copy" path="$PROJECT_DIR$/web/scripts" />
+      </element>
     </root>
   </artifact>
 </component>
