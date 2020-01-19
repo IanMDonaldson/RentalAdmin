@@ -6,10 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co.</title>
-<style>
-	<%@include file="css/MenuBar.css" %>
-</style>
+<title>Film Rental Co.</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+
 </head>
 <body>
 

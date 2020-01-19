@@ -5,14 +5,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Movie Rental Co.</title>
-    <style>
-    	<%@include file="css/MenuBar.css" %>
-    </style>
-    <script><%@ include file="scripts/validateActorAdd.js"%></script>
+    <title>Film Rental Co.</title>
+    <link rel="stylesheet" href="css/MenuBar.css"/>
+
+
+    <script type="application/javascript" src="scripts/validateActorAdd.js"></script>
   </head>
   <body>
-  	<h1>Add new Actor with ID: <c:out value="${sessionScope.id }"></c:out></h1>
+  	<h1>Add new Actor with ID: ${sessionScope.id}</h1>
   	<form action="WebActor?action=addActorPOST&id=${sessionScope.id }" method="post" name="myForm">
   		<input type="hidden" id="id" name="id" value="${sessionScope.id }"/>
 		<fieldset>

@@ -6,15 +6,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co. - Film Management</title>
-<style>
-	<%@include file="css/MenuBar.css" %>
-</style>
+<title>Film Rental Co. - Film Management</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+
 </head>
 <body>
 <h1>Films</h1>
 <form action="WebFilm?action=searchFilmPOST" method="post">
-Search: <input type="text" name="title"/>
+    <label for="title">Search: <input type="text" id="title" name="title"/></label>
 <input type="submit" value="Search Films" /><br>
 <a href="WebFilm?action=getAllFilms">List all Films</a>
 <a href="WebFilm?action=addFilmGET">Add Film</a>

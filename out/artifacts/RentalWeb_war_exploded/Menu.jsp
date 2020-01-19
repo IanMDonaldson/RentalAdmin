@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co.</title>
+<title>Film Rental Co.</title>
     <link rel="stylesheet" href="css/MenuBar.css"/>
     <script type="application/javascript" src="scripts/nothing.js"></script>
 </head>

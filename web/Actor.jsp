@@ -6,11 +6,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co. - List of Actors!</title>
-<style>
-<%@include file="css/MenuBar.css" %>
-<%@include file="css/Actor.css" %>
-</style>
+<title>Film Rental Co. - List of Actors!</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+<link rel="stylesheet" href="css/Actor.css"/>
+
 </head>
 <body>
 <a href="javascript:history.back()" class="button">Return to Actor List</a>
@@ -22,7 +22,7 @@
 	<div class="types">Films Played by Actor: </div>
 		<div class="list">
 			<c:forEach items="${sessionScope.actorsFilmList}" var="film">
-				<a href="WebFilm?action=getFilm&id=${sessionScope.film.id}">${sessionScope.film.title }</a><br>
+				<a href="WebFilm?action=getFilm&id=${film.id}">${film.title }</a><br>
 			</c:forEach>
 		</div>
 	

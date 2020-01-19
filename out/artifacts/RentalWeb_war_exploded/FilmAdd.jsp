@@ -7,34 +7,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Movie Rental Co.</title>
-    <style>
-   		<%@include file="css/MenuBar.css" %>
-    </style>
-    <script><%@ include file="scripts/filmAdd.js"%></script>
+    <title>Film Rental Co.</title>
+    <link rel="stylesheet" href="css/MenuBar.css"/>
+
+
+    <script type="application/javascript" src="scripts/filmAdd.js"></script>
   </head>
   <body>
-	<h1>Add new Film with ID: <c:out value="${sessionScope.id }"></c:out></h1>
+	<h1>Add new Film with ID: ${sessionScope.id }</h1>
 <form action="WebFilm?action=addFilmPOST&id=${sessionScope.id }" method="post" name="myForm">
             <input type="hidden" id="id" name="id" value="${sessionScope.id }" />
             <fieldset>
                 <label for="title">Title: </label><input type="text" style="text-transform: uppercase" name="title" id="title" required="required" aria-required="true" pattern="[A-Za-z\ ]+|(\d\d\d\d)+|(\d\d\d)+|(\d\d)+|\d+" /><br>
                 <label for="description">Description: </label><input type="text" name="description" id="description" required="required" aria-required="true" /><br>
                 <label for="rating">Rating: </label>
-                <select>
+                <select id="rating" name="rating">
                     <option value="G">G</option>
                     <option value="PG">PG</option>
                     <option value="PG-13">PG-13</option>
                     <option value="R">R</option>
                     <option value="NC-17">NC-17</option>
                 </select><br>
-                <label for="language">Language: English</label><br><!-- TODO: implement more languages here when website is complete -->
+                <label for="languageID">Language: English</label>
+                <select id="languageID" name="languageID">
+                    <option value="1">English</option>
+                    <option value="7">Spanish</option>
+                    <option value="3">Japanese</option>
+                    <option value="6">German</option>
+                    <option value="5">French</option>
+                    <option value="2">Italian</option>
+                    <option value="4">Mandarin</option>
+                </select><br><!-- TODO: implement more languages here when website is complete -->
                 <label for="length">Length in Minutes: <abbr title="Required">*</abbr></label><input aria-required="true" type="text" name="length" id="length" class="length" pattern="0*(3\d|1\d\d|20\d|21[0-5])$" required="required" title="Whole number from 30 to 215" /><br>
 
                 <label for="rentalRate">Rental Rate: </label><input aria-required="true" type="text" name="rentalRate" id="rentalRate" pattern="0*(0\.99|[1-4]\.\d\d|[1-4])$" required="required" title="Any whole number or decimal from 0.99 to 4.99" /><br>
-                <label for="replacementcost">Replacement Cost: </label><input aria-required="true" type="text" name="replacementCost" id="replacementCost" pattern="0*([5-9]|[1-2]\d|3[0-6]|4\.99|[5-9]\.\d\d|[1-2]\.\d\d|3[0-5]\.\d\d|3[0-5]\.\d|[1-2]\.\d)$" required="required" title="Any whole number or decimal from 4.99 to 36" /><br>
+                <label for="replacementCost">Replacement Cost: </label><input aria-required="true" type="text" name="replacementCost" id="replacementCost" pattern="0*([5-9]|[1-2]\d|3[0-6]|4\.99|[5-9]\.\d\d|[1-2]\.\d\d|3[0-5]\.\d\d|3[0-5]\.\d|[1-2]\.\d)$" required="required" title="Any whole number or decimal from 4.99 to 36" /><br>
                 <label for="rentalDuration">Rental Duration in Days: </label>
-                <select>
+                <select id="rentalDuration" name="rentalDuration">
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>

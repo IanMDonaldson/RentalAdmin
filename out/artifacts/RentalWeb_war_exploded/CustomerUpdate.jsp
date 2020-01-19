@@ -5,18 +5,18 @@
 <!doctype html>
 <html>
   <head>
-    <title>Movie Rental Co.</title>
-    <style>
-    	<%@include file="css/MenuBar.css" %>
-    </style>
+    <title>Film Rental Co.</title>
+    <link rel="stylesheet" href="css/MenuBar.css"/>
+
+
   </head>
   <body>
-	<form action="WebCustomer?action=updateCustomerPOST&id=${sessionScope. sessionScope.customer.ID }" method="post">
-	<input type="hidden" name="id" value="${sessionScope.sessionScope.customer.ID}"/>
+	<form action="WebCustomer?action=updateCustomerPOST&id=${sessionScope.customer.ID }" method="post">
+	<input type="hidden" name="id" value="${sessionScope.customer.ID}"/>
 		<fieldset>
-			<label for="firstName">First Name: </label><input type="text" id="firstName" value="${sessionScope.sessionScope.customer.firstName }" pattern="^[A-Za-z]+$"/><br>
-			<label for="lastName">Last Name: </label><input type="text" id="lastName" value="${sessionScope.sessionScope.customer.lastName}" pattern="^[A-Za-z]+$"/><br>
-			<label for="email">Email: </label><input type="email" id="email" value="${sessionScope.sessionScope.customer.email }" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/><br><br>
+			<label for="firstName">First Name: </label><input type="text" id="firstName" value="${sessionScope.customer.firstName }" pattern="^[A-Za-z]+$"/><br>
+			<label for="lastName">Last Name: </label><input type="text" id="lastName" value="${sessionScope.customer.lastName}" pattern="^[A-Za-z]+$"/><br>
+			<label for="email">Email: </label><input type="email" id="email" value="${sessionScope.customer.email }" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"/><br><br>
 			<input type="submit" id="submitbutton" class="button" value="Update Actor"/>
 			<input type="button" onclick="back()" value="Cancel"/>
 		</fieldset>

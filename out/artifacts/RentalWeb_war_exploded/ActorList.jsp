@@ -6,20 +6,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co.</title>
-<style>
-	<%@include file="css/MenuBar.css" %>
-	<%@include file="css/ActorList.css" %>
-</style>
+<title>Film Rental Co.</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+	<link rel="stylesheet" href="css/ActorList.css"/>
+
 </head>
 <body>
 	<a href="WebActor?action=addActorGET" class="button">Add Actor</a>
 	<h1>List of Actors</h1>
+	<div id="list">
 	<c:forEach items="${sessionScope.actorList}" var="current">
 		<a href="WebActor?action=getActor&id=${current.id}">${current.lastName}, ${current.firstName}</a>
 		<a href="WebActor?action=deleteActorGET" class="button" id="delete">Delete</a>
 		<a href="WebActor?action=updateActorGET" class="button" id="delete">Update</a>
 		<br>
 	</c:forEach>
+	</div>
 </body>
 </html>

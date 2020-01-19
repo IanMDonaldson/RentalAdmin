@@ -1,4 +1,4 @@
-var fields = [
+let fields = [
 	document.getElementsByTagName("input"),
 	document.getElementsByTagName("textarea")
 	];
@@ -17,7 +17,7 @@ function addEvent(node, type, callback) {
 
 function instantValidation(field) {
 	if (shouldBeValidated(field)) {
-		var invalid =
+	let invalid =
 			(field.getAttribute("required") && !field.value) ||
 			(field.getAttribute("pattern") &&
 					field.value &&
@@ -32,8 +32,8 @@ function instantValidation(field) {
 addEvent(document, "change", function(e, target) {
 	instantValidation(target);
 });
-for (var a = fields.length, i = 0; i < a; i++) {
-	for (var b = fields[i].length, j = 0; j < b; j++) {
+for (let a = fields.length, i = 0; i < a; i++) {
+	for (let b = fields[i].length, j = 0; j < b; j++) {
 		addEvent(fields[i][j], "change", function(e, target) {
 			instantValidation(target);
 		});

@@ -5,15 +5,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co.</title>
-<style>
-<%@include file="css/MenuBar.css" %>
-</style>
+<title>Film Rental Co.</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+
 </head>
 <body>
 <form action="WebActor?action=searchActorPOST" method="post">
-Search: <input type="text" name="actorName"/>
-<input type="submit" value="Search Actors" /><br><br>
+<label for="actorName">Search: </label>
+    <input type="text" id="actorName" name="actorName"/>
+    <input type="submit" value="Search Actors" /><br><br>
 <a href="WebActor?action=getAllActors">List all Actors</a>
 <a href="WebActor?action=addActorGET">Add Actor</a>
 </form>

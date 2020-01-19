@@ -1,17 +1,16 @@
 package com.iandonaldson.web;
 
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
+import com.iandonaldson.data.Actor;
+import com.iandonaldson.data.ActorDaoImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.iandonaldson.data.ActorDaoImpl;
-import com.iandonaldson.data.Actor;
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Servlet implementation class Actor
@@ -22,10 +21,8 @@ public class WebActor extends HttpServlet {
        private String actorIDParam;
        private int actorID;
        private Actor actor;
-       private String actorFName;
-       private String actorLName;
-       
-    /**
+
+	/**
      * @see HttpServlet#HttpServlet()
      */
     public WebActor() {
@@ -138,8 +135,8 @@ public class WebActor extends HttpServlet {
 				 * if so, add, if not present a failure page that redirects to the actor management page*/
 				actorIDParam = request.getParameter("id");
 				actorID = Integer.parseInt(actorIDParam);
-				actorFName = request.getParameter("firstName").toUpperCase();
-				actorLName = request.getParameter("lastName").toUpperCase();
+				String actorFName = request.getParameter("firstName").toUpperCase();
+				String actorLName = request.getParameter("lastName").toUpperCase();
 				
 				Actor actor = new Actor();
 				

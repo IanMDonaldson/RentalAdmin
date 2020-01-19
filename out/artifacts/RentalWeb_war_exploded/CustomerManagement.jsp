@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co.</title>
-<style>
-	<%@include file="css/MenuBar.css" %>
-</style>
+<title>Film Rental Co.</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+
 </head>
 <body>
 <form action="WebCustomer?action=searchCustomerPOST" method="post">
-Search: <input type="text" name="customerName"/>
+<label for="search">Search: </label><input type="text" id="search" name="search"/>
 <input type="submit" value="Search Customers" /><br><br>
 <a href="WebCustomer?action=getAllCustomers">List All Customers</a>
 </form>

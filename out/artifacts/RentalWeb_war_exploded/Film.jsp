@@ -7,16 +7,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co. - List of Films</title>
-<style>
-	<%@include file="css/MenuBar.css" %>
-</style>
+<title>Film Rental Co. - List of Films</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+
 </head>
 <body>
 <p>
-<a href="WebFilm?action=getAllFilms">Return to Movies</a><br>
+<a href="WebFilm?action=getAllFilms">Return to Films</a><br>
 <h1>${sessionScope.film.title}</h1><br>
-<a href="WebFilm?action=updateFilmGET&id=${sessionScope.film.id}">Update Movie</a>
+<a href="WebFilm?action=updateFilmGET&id=${sessionScope.film.id}" class="button">Update Film</a>
+<a href="WebFilm?action=updateFilmGET&id=${sessionScope.film.id }" class="button">Update</a>
+<a href="WebFilm?action=deleteFilmGET&id=${sessionScope.film.id }" class="button">Delete</a>
+<a href="WebFilm?action=assocActorsGET&id=${sessionScope.film.id}" class="button">Associate Actors</a>
 <p>
 	Description: ${sessionScope.film.description}<br>
 	Length: $<fmt:formatNumber type="number" maxFractionDigits="0" value="${sessionScope.film.length}" /> minutes<br>
@@ -25,7 +28,7 @@
 	Replacement Cost: $<fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${sessionScope.film.replacementCost}" /><br><br>
 	Actors:<br>
 	<c:forEach items="${sessionScope.filmsActorList}" var="actor">
-		<a href="WebActor?action=getActor&id=${sessionScope. actor.id }">${sessionScope.actor.firstName}, ${sessionScope.actor.lastName}</a><br>
+		<a href="WebActor?action=getActor&id=${actor.id}">${actor.firstName}, ${actor.lastName}</a><br>
 	</c:forEach>
 </p>
 </body>

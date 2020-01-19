@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title></title>
 <meta charset="UTF_8">
 </head>
 <body>
@@ -14,16 +15,15 @@
 			<div class="dropContent">
 					<a href="WebFilm?action=getAllFilms">List All Films</a>
 					<a href="WebFilm?action=addFilmGET">Add Film</a>
-					<a href="WebFilm?action=filmManagement">Film Management & Search</a>
+					<a href="WebFilm?action=manageFilms">Film Management & Search</a>
 			</div>
 		</div>
-			<div class="drop">
-				<button class="dropButton">Actors</button>
-				<div class="dropContent">
-					<a href="WebActor?action=getAllActors">List All Actors</a>
-					<a href="WebActor?action=addActorGET">Add Actor</a>
-					<a href="WebActor?action=manageActors">Actor Management & Search</a>
-				</div>
+		<div class="drop">
+			<button class="dropButton">Actors</button>
+			<div class="dropContent">
+				<a href="WebActor?action=getAllActors">List All Actors</a>
+				<a href="WebActor?action=addActorGET">Add Actor</a>
+				<a href="WebActor?action=manageActors">Actor Management & Search</a>
 			</div>
 		</div>
 	</div>

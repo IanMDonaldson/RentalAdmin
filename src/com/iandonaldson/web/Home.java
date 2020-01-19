@@ -24,7 +24,7 @@ public class Home extends HttpServlet {
 		if(request.getParameter("action") == null ) {
 			request.getRequestDispatcher("Menu.jsp").forward(request, response);
 		}
-		else if (request.getParameter("action") == "mainMenu") {
+		else if (request.getParameter("action").equals("mainMenu")) {
 				request.getRequestDispatcher("Menu.jsp").forward(request, response);
 
 		}

@@ -6,16 +6,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Movie Rental Co. - List of Customers</title>
-<style>
-	<%@include file="css/MenuBar.css" %>
-</style>
+<title>Film Rental Co. - List of Customers</title>
+<link rel="stylesheet" href="css/MenuBar.css"/>
+
+
 </head>
 <body>
 <h1>Customer List</h1>
 <p>
 	<c:forEach items="${sessionScope.CustomerList}" var="current">
-		<a href="WebCustomer?action=getCustomer&id=${sessionScope.current.ID}">${sessionScope.current.lastName}, ${sessionScope.current.firstName}</a>
+		<a href="WebCustomer?action=getCustomer&id=${current.ID}">${current.lastName}, ${current.firstName}</a>
 		<br>
 	</c:forEach>
 </p>
