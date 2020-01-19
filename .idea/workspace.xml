@@ -11,88 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7ffa9a-926d-4dab-bec3-6c31a13749f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/RentalWeb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/RentalWeb_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RentalWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RentalWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/About.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/About.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Actor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Actor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/ActorUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/AssocActorsToFilm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/AssocActorsToFilm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/CustomerUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FailurePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FailurePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Film.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Film.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/FilmUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/MenuBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/MenuBar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ActorDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/ConnectionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/data/FilmDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebActor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebFilm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/WEB-INF/classes/com/iandonaldson/web/WebFilm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/ActorList.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/ActorList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/FilmList.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/FilmList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/MenuBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/css/MenuBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/AssocActorsToFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/AssocActorsToFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/filmAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/filmAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/validateActorAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/scripts/validateActorAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ActorDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/ConnectionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/FilmDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/FilmDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/FilmDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/data/FilmDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebActor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebFilm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RentalWeb/com/iandonaldson/web/WebFilm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/WebActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/WebActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/About.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/About.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Actor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Actor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ActorAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ActorList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ActorManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ActorUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ActorUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/AssocActorsToFilm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/AssocActorsToFilm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/CustomerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/CustomerList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/CustomerManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/CustomerManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/CustomerUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/CustomerUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/FailurePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FailurePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Film.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Film.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/FilmAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FilmAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/FilmList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FilmList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/FilmManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FilmManagement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/FilmUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/FilmUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/MenuBar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/MenuBar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/ActorList.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/ActorList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/FilmList.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/FilmList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/MenuBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/MenuBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scripts/AssocActorsToFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/AssocActorsToFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scripts/filmAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/filmAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/scripts/validateActorAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/scripts/validateActorAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,10 +58,17 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="addDeleteFilm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/IanMDonaldson/RentalWeb.git" />
+      </set>
+    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -289,11 +215,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -345,6 +266,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finally working with Intellij" />
@@ -552,10 +484,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="368" y="21" width="1180" height="1025" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579064936050" />
-    <state x="-6" y="158" width="1004" height="650" key="Vcs.Push.Dialog.v2" timestamp="1579467069791">
+    <state x="-10" y="110" width="1004" height="650" key="Vcs.Push.Dialog.v2" timestamp="1579468514272">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-6" y="158" width="1004" height="650" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579467069791" />
+    <state x="-10" y="110" width="1004" height="650" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579468514272" />
     <state width="960" height="522" key="XDebugger.FullValuePopup" timestamp="1578463150681">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
