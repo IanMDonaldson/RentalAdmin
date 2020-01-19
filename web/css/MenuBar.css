@@ -1,0 +1,101 @@
+.container {
+    display: inline-block;
+    position: relative;
+}
+/* drop Button */
+.dropButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the drop content */
+.drop {
+    position: relative;
+    display: inline-block;
+}
+/* drop Content (Hidden by Default) */
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#home {
+    color: white;
+    text-decoration: none;
+
+}
+/* Links inside the drop */
+.dropContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of drop links on hover */
+.dropContent a:hover {background-color: #ddd;}
+
+/* Show the drop menu on hover */
+.drop:hover .dropContent {display: block;}
+
+/* Change the background color of the drop button when the drop content is shown */
+.drop:hover .dropButton {background-color: #3e8e41;}
+
+#home:hover .dropButton {background-color: #3e8e41;}
+/*
+body {
+		height: 125vh;
+		background-size: cover;
+		font-family: "Open-Sans", sans-serif;
+		margin-top: 80px;
+		padding: 8vh 0 0 3vw;
+		background-color: #f0f0f1;
+}
+
+header {
+		background-color: #f0f0f1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 25px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		text-align: center;
+}
+header * {
+	display: inline;
+}
+
+header li {
+	color: white;
+	border-radius: 15px;
+	background-color: #37425e;
+	padding: .83vh .87vw;
+}
+
+
+header li:hover {
+	border-radius: 15px;
+	background-color: #c0c3ca;
+}
+
+header li a {
+	border-radius: 15px;
+	margin: 20px;
+	color: white;
+	text-decoration: none;
+	padding: .83vh .87vw;
+}
+header li a:hover {
+	border-radius: 15px;
+	color: #4d2500;
+}
+*/
+

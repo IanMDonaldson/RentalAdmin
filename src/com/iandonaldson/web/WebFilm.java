@@ -1,23 +1,19 @@
 package com.iandonaldson.web;
 
-import java.io.IOException;
+import com.iandonaldson.data.ActorDaoImpl;
+import com.iandonaldson.data.Film;
+import com.iandonaldson.data.FilmDaoImpl;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.iandonaldson.data.FilmDaoImpl;
-import com.iandonaldson.data.Film;
-import com.iandonaldson.data.ActorDaoImpl;
-import com.iandonaldson.data.Actor;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-import java.text.SimpleDateFormat;
+import java.io.IOException;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.DateFormat;
 
 
 /**
@@ -29,9 +25,9 @@ public class WebFilm extends HttpServlet {
 	private String filmIDParam;
 	private int filmID;
 	private Film film;
-	private String isUpdated = "true";
-       
-    /**
+	private FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
+
+	/**
      * @see HttpServlet#HttpServlet()
      */
     public WebFilm() {
@@ -43,13 +39,13 @@ public class WebFilm extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
-		
 		if (request.getParameter("action") == null) {
 			request.getRequestDispatcher("FilmManagement.jsp").forward(request, response);
 		}
 		else {
 			FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
 			ActorDaoImpl actorDaoImpl = new ActorDaoImpl();
+			String isUpdated = "true";
 			switch(request.getParameter("action")) {
 			case "getAllFilms":
 				request.getSession().setAttribute("filmList", filmDaoImpl.getAllFilms());
@@ -58,6 +54,7 @@ public class WebFilm extends HttpServlet {
 			case "getFilm":
 				filmIDParam = request.getParameter("id");
 				filmID = Integer.parseInt(filmIDParam);
+				film = filmDaoImpl.getFilm(filmID);
 					request.getSession().setAttribute("film", film);
 				request.getSession().setAttribute("id", film.getId());
 				request.getSession().setAttribute("filmsActorList", film.getActorList());
@@ -116,7 +113,6 @@ public class WebFilm extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		FilmDaoImpl filmDaoImpl = new FilmDaoImpl();
 		if (request.getParameter("action") == null ) {
 			request.getRequestDispatcher("Menu.jsp").forward(request,response);
 		}
@@ -144,8 +140,8 @@ public class WebFilm extends HttpServlet {
 				}
 				break;
 			case "searchFilmPOST":
-				filmIDParam = request.getParameter("title").toString();
-				if (filmDaoImpl.searchFilmByTitle(filmIDParam)) {
+				filmIDParam = request.getParameter("title");
+				if (filmDaoImpl.filmExists(filmIDParam)) {
 					request.getSession().setAttribute("filmList", filmDaoImpl.getFilmsByTitle(filmIDParam));
 					request.getRequestDispatcher("FilmList.jsp").forward(request, response);
 				}
@@ -160,26 +156,33 @@ public class WebFilm extends HttpServlet {
 				
 				String languageIDParam = request.getParameter("languageID");
 				int languageID = Integer.parseInt(languageIDParam);
+
 				String rentalDurationParam = request.getParameter("rentalDuration");
 				int rentalDuration = Integer.parseInt(rentalDurationParam);
+
 				String lengthParam = request.getParameter("length");
 				int length = Integer.parseInt(lengthParam);
+
 				String rentalRateParam = request.getParameter("rentalRate");
 				double rentalRate = Double.parseDouble(rentalRateParam);
+
+				String replacementCostParam = request.getParameter("replacementCost");
+				double replacementCost = Double.parseDouble(replacementCostParam);
 				
 				java.sql.Date releaseYear = null;
 				try {
-					SimpleDateFormat fmt = new SimpleDateFormat("yyyy");
+					DateFormat fmt = new SimpleDateFormat("yyyy");
 					String releaseYearParam = request.getParameter("releaseYear");
 					Date parsed = fmt.parse(releaseYearParam);
-					releaseYear = new java.sql.Date(parsed.getTime());
+					releaseYear = new java.sql.Date(parsed.getYear());
 				} catch (ParseException e) {
 					e.printStackTrace();
 				}
 				//List<String> specFeatures = new ArrayList<String>(Arrays.asList(specialFeatures));
-				Film film = new Film(title, description, rating, filmID, languageID, rentalDuration, length, rentalRate, releaseYear);
+				film = new Film(title, description, rating, filmID, languageID, rentalDuration,
+						length, rentalRate, replacementCost, releaseYear);
 				
-				boolean filmExists = filmDaoImpl.filmExists(film);
+				boolean filmExists = filmDaoImpl.filmExists(title);
 				boolean addSuccessful = filmDaoImpl.addFilm(film);
 				if (filmExists) {
 					request.getSession().setAttribute("add", true);
@@ -200,7 +203,7 @@ public class WebFilm extends HttpServlet {
 				filmIDParam = request.getParameter("id");
 				filmID = Integer.parseInt(filmIDParam);
 				film = filmDaoImpl.getFilm(filmID);
-				String[] assocActors = request.getParameterValues("hiddenActors");
+				String assocActors = request.getParameter("hiddenActors");// comma separated string, parse plz
 				if (filmDaoImpl.assocActors(film, assocActors)) {
 					request.getSession().setAttribute("filmList", filmDaoImpl.getAllFilms());
 					request.getSession().setAttribute("id", film.getId());

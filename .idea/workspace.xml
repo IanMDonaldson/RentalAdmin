@@ -1,69 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+    <option name="CUSTOM_SCOPE_NAME" value="Selected Directory" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="RentalWeb:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5412bb89-5ecb-440f-9fe0-466f974082a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RentalWeb_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RentalWeb.eml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RentalWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/css/AssocActorsToFilm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/css/FilmList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tomcat1/tomcat1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/AssocActorsToFilm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/AssocActorsToFilm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/FilmAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/FilmAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/FilmList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/FilmList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/AssocActorsToFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/scripts/AssocActorsToFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Actor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ActorDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/ConnectionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/CustomerDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Film.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/FilmDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/LocationDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Staff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StaffDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/data/StoreDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/iandonaldson/web/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/ActorDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/data/FilmDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java" afterDir="false" />
+    <list default="true" id="6a7ffa9a-926d-4dab-bec3-6c31a13749f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="272" />
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -76,32 +35,47 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sakila@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="addDeleteFilm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsBowerSettings">
-    <node-interpreter value="project" />
-    <bower-package value="" />
-    <bower.json value="" />
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/IanMDonaldson/RentalWeb.git" />
+      </set>
+    </option>
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -110,24 +84,27 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="1VgvYTOU3fNAHq6R8yXcA41bhBX" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1W0Sx84iCzw8GoSE259BTyao9yp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="findjar.last.used.dir" value="$USER_HOME$/tomcat9/lib" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/scripts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -135,22 +112,26 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.07434553" />
-    <property name="project.structure.side.proportion" value="0.0863477" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.16711111" />
+    <property name="project.structure.side.proportion" value="0.113250256" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
-  <component name="RunDashboard">
-    <option name="excludedTypes">
-      <set>
-        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
-      </set>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/out/artifacts/RentalWeb_war_exploded/Resources" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/icedtea-bin-8/jre" show_console_on_std_err="true" show_console_on_std_out="true">
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+    <configuration name="Tomcat 9.0.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/RentalWeb_war_exploded/Menu.jsp" />
+      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="RentalWeb:war exploded">
@@ -160,108 +141,15 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_RentalWeb" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file enabled="true" id="Tomcat Host Manager" />
-      <predefined_log_file enabled="true" id="Tomcat Localhost Access" />
-      <extension name="coverage" sample_coverage="false">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="WEB-INF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="36439" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/startup.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/shutdown.sh" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="RentalWeb:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="/usr/lib/jvm/icedtea-bin-8/jre">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/RentalWeb_war_exploded/" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="RentalWeb:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/RentalWeb_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_RentalWeb" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_RentalWeb_4" />
       </server-settings>
       <log_file alias="Tomcat Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/manager.*" />
+      <log_file alias="Tomcat Host Manager Log" path="%IDEA_RUN:CATALINA_BASE%/logs/host-manager.*" />
+      <log_file alias="Tomcat Localhost Access Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost_access_log.*" />
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <extension name="coverage" sample_coverage="false">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="WEB-INF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="36439" />
+        <option name="DEBUG_PORT" value="33335" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -296,25 +184,20 @@
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/startup.sh" />
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </STARTUP>
         <SHUTDOWN>
-          <option name="USE_DEFAULT" value="false" />
-          <option name="SCRIPT" value="/opt/apache-tomcat-9/bin/shutdown.sh" />
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
-        <EnvironmentVariables>
-          <option name="NAME" value="" />
-          <option name="VALUE" value="" />
-          <option name="IS_PREDEFINED" value="false" />
-        </EnvironmentVariables>
       </ConfigurationWrapper>
       <method v="2">
-        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="RentalWeb:war exploded" />
         </option>
@@ -325,8 +208,14 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.123556554" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -338,224 +227,321 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5412bb89-5ecb-440f-9fe0-466f974082a3" name="Default Changelist" comment="" />
-      <created>1577687599841</created>
+      <changelist id="6a7ffa9a-926d-4dab-bec3-6c31a13749f4" name="Default Changelist" comment="" />
+      <created>1578285262899</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1577687599841</updated>
-      <workItem from="1577687609739" duration="421000" />
-      <workItem from="1577757382870" duration="3344000" />
-      <workItem from="1577761356810" duration="546000" />
-      <workItem from="1577762500859" duration="4632000" />
-      <workItem from="1577767271668" duration="3585000" />
-      <workItem from="1577838173175" duration="9811000" />
-      <workItem from="1577934228107" duration="4328000" />
-      <workItem from="1577939928668" duration="12609000" />
-      <workItem from="1578029781903" duration="2492000" />
+      <updated>1578285262899</updated>
+      <workItem from="1578285264265" duration="134000" />
+      <workItem from="1578285410624" duration="2342000" />
+      <workItem from="1578287816778" duration="4610000" />
+      <workItem from="1578293008542" duration="78000" />
+      <workItem from="1578293882188" duration="2613000" />
+      <workItem from="1578363191805" duration="4896000" />
+      <workItem from="1578421294562" duration="342000" />
+      <workItem from="1578422786426" duration="4902000" />
+      <workItem from="1578450610701" duration="707000" />
+      <workItem from="1578451408633" duration="8822000" />
+      <workItem from="1578525897751" duration="26169000" />
+      <workItem from="1578961015058" duration="22334000" />
+      <workItem from="1579051695772" duration="9684000" />
+      <workItem from="1579145351358" duration="14404000" />
     </task>
+    <task id="LOCAL-00001" summary="Finally working with Intellij">
+      <created>1578527908961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578527908961</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Film add almost complete except for inserting the releaseYear(java automatically tacks on 01-01 to the release year leaving a  &quot;truncated for column&quot; error&#10;also associateFilmToActors is working as is but is not where it needs to be, it currently saves the selected actors into a JS array &quot;actors&quot; and when submitted it pushes the data onto a hidden input &quot;hiddenactors&quot; which is then grabbed by the servlet. I'd like it to directly manipulate the assocActors and nonassocActors so it can grab it as a linked list">
+      <created>1579467060305</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579467060305</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="453" y="114" width="1004" height="835" key="#Custom_Plugin_Repositories" timestamp="1577762755376">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="453" y="114" width="1004" height="835" key="#Custom_Plugin_Repositories/0.0.1920.1080@0.0.1920.1080" timestamp="1577762755376" />
-    <state x="453" y="114" width="1004" height="835" key="#Inspections" timestamp="1577920996936">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="453" y="114" width="1004" height="835" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1577920996936" />
-    <state x="553" y="195" width="804" height="673" key="#Notifications" timestamp="1577688019318">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="553" y="195" width="804" height="673" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1577688019318" />
-    <state x="921" y="-13" width="995" height="1045" key="#Project_Structure" timestamp="1578031933606">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="921" y="-13" width="995" height="1045" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1578031933606" />
-    <state x="453" y="114" width="1004" height="835" key="#SQL_Dialects" timestamp="1577763968922">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="453" y="114" width="1004" height="835" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1577763968922" />
-    <state x="37" y="41" width="875" height="980" key="#Tomcat9" timestamp="1578032942681">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="37" y="41" width="875" height="980" key="#Tomcat9/0.0.1920.1080@0.0.1920.1080" timestamp="1578032942681" />
-    <state x="411" y="47" width="875" height="951" key="#Tomcat_9.0.24" timestamp="1577837733470">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="411" y="47" width="875" height="951" key="#Tomcat_9.0.24/0.0.1920.1080@0.0.1920.1080" timestamp="1577837733470" />
-    <state x="67" y="231" width="804" height="673" key="#Tomcat_Server" timestamp="1578032759058">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="67" y="231" width="804" height="673" key="#Tomcat_Server/0.0.1920.1080@0.0.1920.1080" timestamp="1578032759058" />
-    <state x="-2" y="11" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578033211278">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-2" y="11" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578033211278" />
-    <state x="718" y="132" width="466" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1577903363683">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="718" y="132" width="466" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577903363683" />
-    <state x="875" y="11" width="653" height="539" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1578031991146">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="875" y="11" width="653" height="539" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578031991146" />
-    <state x="620" y="231" width="654" height="501" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578031956039">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="620" y="231" width="654" height="501" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578031956039" />
-    <state x="444" y="131" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577762079602">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="444" y="131" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577762079602" />
-    <state x="790" y="425" width="330" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577759425112">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="790" y="425" width="330" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577759425112" />
-    <state x="1280" y="35" width="640" height="1045" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1578032131557">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1280" y="35" width="640" height="1045" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1080@0.0.1920.1080" timestamp="1578032131557" />
-    <state x="1165" y="428" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1577838894363">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1165" y="428" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577838894363" />
-    <state x="536" y="165" width="828" height="680" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1577759422437">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="536" y="165" width="828" height="680" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577759422437" />
-    <state x="787" y="134" width="328" height="698" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1577766506971">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="787" y="134" width="328" height="698" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577766506971" />
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577990862694">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577990862694" />
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1577920662175">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577920662175" />
-    <state x="456" y="103" width="997" height="857" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1577944558454">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="456" y="103" width="997" height="857" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577944558454" />
-    <state x="628" y="300" width="770" height="366" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577944591288">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="628" y="300" width="770" height="366" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1577944591288" />
-    <state x="627" y="196" width="642" height="570" key="EnvironmentVariablesDialog" timestamp="1577764143467">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="627" y="196" width="642" height="570" key="EnvironmentVariablesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577764143467" />
-    <state x="206" y="-242" width="1120" height="510" key="FileChooserDialogImpl" timestamp="1578033228154">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="206" y="-242" width="1120" height="510" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578033228154" />
-    <state width="1864" height="264" key="GridCell.Tab.0.bottom" timestamp="1578033235224">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235224" />
-    <state width="1864" height="264" key="GridCell.Tab.0.center" timestamp="1578033235224">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235224" />
-    <state width="1864" height="264" key="GridCell.Tab.0.left" timestamp="1578033235223">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235223" />
-    <state width="1864" height="264" key="GridCell.Tab.0.right" timestamp="1578033235224">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1864" height="264" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578033235224" />
-    <state width="1278" height="263" key="GridCell.Tab.1.bottom" timestamp="1578029741598">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741598" />
-    <state width="1278" height="263" key="GridCell.Tab.1.center" timestamp="1578029741597">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741597" />
-    <state width="1278" height="263" key="GridCell.Tab.1.left" timestamp="1578029741597">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741597" />
-    <state width="1278" height="263" key="GridCell.Tab.1.right" timestamp="1578029741598">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741598" />
-    <state width="1278" height="263" key="GridCell.Tab.2.bottom" timestamp="1578029741599">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741599" />
-    <state width="1278" height="263" key="GridCell.Tab.2.center" timestamp="1578029741599">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741599" />
-    <state width="1278" height="263" key="GridCell.Tab.2.left" timestamp="1578029741598">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741598" />
-    <state width="1278" height="263" key="GridCell.Tab.2.right" timestamp="1578029741599">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1278" height="263" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578029741599" />
-    <state x="785" y="-61" width="1129" height="1045" key="SettingsEditor" timestamp="1578033231005">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="785" y="-61" width="1129" height="1045" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578033231005" />
-    <state x="721" y="270" width="468" height="522" key="VcsDiffUtil.ChangesDialog" timestamp="1577759019193">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="721" y="270" width="468" height="522" key="VcsDiffUtil.ChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577759019193" />
-    <state x="652" y="163" width="593" height="592" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1578012836679">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="652" y="163" width="593" height="592" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1080@0.0.1920.1080" timestamp="1578012836679" />
-    <state x="983" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1578094438301">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="983" y="169" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578094438301" />
-    <state x="531" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1577943346971">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="531" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577943346971" />
-    <state x="579" y="325" width="751" height="413" key="git4idea.merge.GitPullDialog" timestamp="1577758980578">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="579" y="325" width="751" height="413" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577758980578" />
-    <state x="681" y="398" width="547" height="266" key="git4idea.rebase.GitRebaseDialog" timestamp="1577759036648">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="681" y="398" width="547" height="266" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577759036648" />
-    <state width="750" height="530" key="javadoc.popup" timestamp="1577845539264">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state width="750" height="530" key="javadoc.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577845539264" />
-    <state x="123" y="99" width="1660" height="816" key="new project wizard" timestamp="1577758920496">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="123" y="99" width="1660" height="816" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1577758920496" />
-    <state x="623" y="265" width="874" height="678" key="search.everywhere.popup" timestamp="1578011833803">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="623" y="265" width="874" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578011833803" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/iandonaldson/web/WebFilm.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finally working with Intellij" />
+    <MESSAGE value="Film add almost complete except for inserting the releaseYear(java automatically tacks on 01-01 to the release year leaving a  &quot;truncated for column&quot; error&#10;also associateFilmToActors is working as is but is not where it needs to be, it currently saves the selected actors into a JS array &quot;actors&quot; and when submitted it pushes the data onto a hidden input &quot;hiddenactors&quot; which is then grabbed by the servlet. I'd like it to directly manipulate the assocActors and nonassocActors so it can grab it as a linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Film add almost complete except for inserting the releaseYear(java automatically tacks on 01-01 to the release year leaving a  &quot;truncated for column&quot; error&#10;also associateFilmToActors is working as is but is not where it needs to be, it currently saves the selected actors into a JS array &quot;actors&quot; and when submitted it pushes the data onto a hidden input &quot;hiddenactors&quot; which is then grabbed by the servlet. I'd like it to directly manipulate the assocActors and nonassocActors so it can grab it as a linked list" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="37" y="56" width="875" height="951" key="#MenuBar.jsp" timestamp="1578451611709">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="37" y="56" width="875" height="951" key="#MenuBar.jsp/0.0.1920.1080@0.0.1920.1080" timestamp="1578451611709" />
+    <state x="458" y="72" width="1302" height="827" key="#Project_Structure" timestamp="1578959217822">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="458" y="72" width="1302" height="827" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1578959217822" />
+    <state x="-10" y="-85" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578960934547">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-10" y="-85" width="1920" height="1045" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578960934547" />
+    <state x="446" y="155" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1578285698996">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="446" y="155" width="1018" height="753" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578285698996" />
+    <state x="476" y="-6" width="1004" height="835" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1578526697211">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="476" y="-6" width="1004" height="835" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1080@0.0.1920.1080" timestamp="1578526697211" />
+    <state x="667" y="380" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1578289149706">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="380" width="568" height="207" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578289149706" />
+    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579154117938">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="628" y="226" width="653" height="610" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579154117938" />
+    <state x="624" y="188" width="653" height="590" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1578779135071">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="624" y="188" width="653" height="590" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578779135071" />
+    <state x="179" y="173" key="#xdebugger.evaluate" timestamp="1579146310578">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="179" y="173" key="#xdebugger.evaluate/0.0.1920.1080@0.0.1920.1080" timestamp="1579146310578" />
+    <state x="550" y="228" width="786" height="342" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578781019357">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="550" y="228" width="786" height="342" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1578781019357" />
+    <state x="-6" y="16" width="1914" height="934" key="CommitChangelistDialog2" timestamp="1579467060075">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-6" y="16" width="1914" height="934" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579467060075" />
+    <state width="569" height="585" key="DebuggerActiveHint" timestamp="1578451809651">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="569" height="585" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1578451809651" />
+    <state x="381" y="-17" width="1120" height="620" key="FileChooserDialogImpl" timestamp="1578781066392">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="381" y="-17" width="1120" height="620" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578781066392" />
+    <state width="1600" height="364" key="GridCell.Tab.0.bottom" timestamp="1579223881341">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881341" />
+    <state width="1600" height="364" key="GridCell.Tab.0.center" timestamp="1579223881341">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881341" />
+    <state width="1600" height="364" key="GridCell.Tab.0.left" timestamp="1579223881341">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881341" />
+    <state width="1600" height="364" key="GridCell.Tab.0.right" timestamp="1579223881341">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881341" />
+    <state width="1864" height="31" key="GridCell.Tab.1.bottom" timestamp="1579223881482">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="31" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881482" />
+    <state width="1864" height="31" key="GridCell.Tab.1.center" timestamp="1579223881481">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="31" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881481" />
+    <state width="1864" height="31" key="GridCell.Tab.1.left" timestamp="1579223881481">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="31" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881481" />
+    <state width="1864" height="31" key="GridCell.Tab.1.right" timestamp="1579223881481">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="31" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881481" />
+    <state width="1600" height="364" key="GridCell.Tab.2.bottom" timestamp="1579223881343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881343" />
+    <state width="1600" height="364" key="GridCell.Tab.2.center" timestamp="1579223881343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881343" />
+    <state width="1600" height="364" key="GridCell.Tab.2.left" timestamp="1579223881342">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881342" />
+    <state width="1600" height="364" key="GridCell.Tab.2.right" timestamp="1579223881343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881343" />
+    <state width="1600" height="364" key="GridCell.Tab.3.bottom" timestamp="1579223881344">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881344" />
+    <state width="1600" height="364" key="GridCell.Tab.3.center" timestamp="1579223881343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881343" />
+    <state width="1600" height="364" key="GridCell.Tab.3.left" timestamp="1579223881343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881343" />
+    <state width="1600" height="364" key="GridCell.Tab.3.right" timestamp="1579223881343">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881343" />
+    <state width="1600" height="364" key="GridCell.Tab.4.bottom" timestamp="1579223881345">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881345" />
+    <state width="1600" height="364" key="GridCell.Tab.4.center" timestamp="1579223881344">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881344" />
+    <state width="1600" height="364" key="GridCell.Tab.4.left" timestamp="1579223881344">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881344" />
+    <state width="1600" height="364" key="GridCell.Tab.4.right" timestamp="1579223881344">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881344" />
+    <state width="1600" height="364" key="GridCell.Tab.5.bottom" timestamp="1579223881345">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.5.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881345" />
+    <state width="1600" height="364" key="GridCell.Tab.5.center" timestamp="1579223881345">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.5.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881345" />
+    <state width="1600" height="364" key="GridCell.Tab.5.left" timestamp="1579223881345">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.5.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881345" />
+    <state width="1600" height="364" key="GridCell.Tab.5.right" timestamp="1579223881345">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.5.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579223881345" />
+    <state width="1600" height="364" key="GridCell.Tab.6.bottom" timestamp="1579222360319">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.6.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579222360319" />
+    <state width="1600" height="364" key="GridCell.Tab.6.center" timestamp="1579222360318">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.6.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579222360318" />
+    <state width="1600" height="364" key="GridCell.Tab.6.left" timestamp="1579222360318">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.6.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579222360318" />
+    <state width="1600" height="364" key="GridCell.Tab.6.right" timestamp="1579222360319">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1600" height="364" key="GridCell.Tab.6.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579222360318" />
+    <state width="1456" height="570" key="GridCell.Tab.7.bottom" timestamp="1578462576557">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1456" height="570" key="GridCell.Tab.7.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576557" />
+    <state width="1456" height="570" key="GridCell.Tab.7.center" timestamp="1578462576554">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1456" height="570" key="GridCell.Tab.7.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576554" />
+    <state width="1456" height="570" key="GridCell.Tab.7.left" timestamp="1578462576553">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1456" height="570" key="GridCell.Tab.7.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576553" />
+    <state width="1456" height="570" key="GridCell.Tab.7.right" timestamp="1578462576555">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1456" height="570" key="GridCell.Tab.7.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578462576555" />
+    <state width="380" height="551" key="HiddenNamespacesPopup" timestamp="1578287470909">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="380" height="551" key="HiddenNamespacesPopup/0.0.1920.1080@0.0.1920.1080" timestamp="1578287470909" />
+    <state x="582" y="184" width="745" height="694" key="MultipleFileMergeDialog" timestamp="1578527712524">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="582" y="184" width="745" height="694" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578527712524" />
+    <state x="142" y="188" width="1284" height="801" key="Registry" timestamp="1578959411066">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="142" y="188" width="1284" height="801" key="Registry/0.0.1920.1080@0.0.1920.1080" timestamp="1578959411066" />
+    <state x="662" y="182" width="586" height="698" key="RollbackChangesDialog" timestamp="1578545419110">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="662" y="182" width="586" height="698" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578545419110" />
+    <state x="368" y="21" width="1180" height="1025" key="SettingsEditor" timestamp="1579064936050">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="368" y="21" width="1180" height="1025" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579064936050" />
+    <state x="-10" y="110" width="1004" height="650" key="Vcs.Push.Dialog.v2" timestamp="1579468514272">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-10" y="110" width="1004" height="650" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579468514272" />
+    <state width="960" height="522" key="XDebugger.FullValuePopup" timestamp="1578463150681">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="960" height="522" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1578463150681" />
+    <state x="398" y="174" width="1114" height="715" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1578783144897">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="398" y="174" width="1114" height="715" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1578783144897" />
+    <state x="484" y="178" key="com.intellij.ide.util.TipDialog" timestamp="1579145352229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="484" y="178" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579145352229" />
+    <state x="483" y="245" width="916" height="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578781100030">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="483" y="245" width="916" height="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1578781100030" />
+    <state x="51" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1578462924500">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="51" y="176" width="848" height="710" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578462924500" />
+    <state x="591" y="171" width="739" height="772" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579222642279">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="591" y="171" width="739" height="772" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1579222642279" />
+    <state x="-4" y="189" width="1179" height="636" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578462951568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-4" y="189" width="1179" height="636" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1578462951568" />
+    <state x="626" y="229" width="653" height="557" key="extract.method.dialog" timestamp="1579061608085">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="626" y="229" width="653" height="557" key="extract.method.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579061608085" />
+    <state x="148" y="220" width="1121" height="750" key="find.popup" timestamp="1579223044194">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="148" y="220" width="1121" height="750" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1579223044194" />
+    <state x="84" y="160" width="778" height="695" key="git4idea.branch.GitSmartOperationDialog" timestamp="1578527704076">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="84" y="160" width="778" height="695" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578527704076" />
+    <state x="17" y="26" width="1895" height="1011" key="new project wizard" timestamp="1578293076676">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="17" y="26" width="1895" height="1011" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1578293076676" />
+    <state x="633" y="38" width="635" height="891" key="refactoring.ChangeSignatureDialog" timestamp="1579154791342">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="633" y="38" width="635" height="891" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579154791342" />
+    <state x="42" y="45" width="874" height="1034" key="search.everywhere.popup" timestamp="1579156483620">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="42" y="45" width="874" height="1034" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1579156483620" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RentalWeb$Tomcat_9_0_24.ic" NAME="Tomcat 9.0.24 Coverage Results" MODIFIED="1577837384763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/RentalWeb$Tomcat_9_0_30.ic" NAME="Tomcat 9.0.30 Coverage Results" MODIFIED="1578978786646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

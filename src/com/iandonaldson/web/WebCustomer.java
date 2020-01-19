@@ -1,15 +1,14 @@
 package com.iandonaldson.web;
 
-import java.io.IOException;
+import com.iandonaldson.data.Customer;
+import com.iandonaldson.data.CustomerDaoImpl;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-
-import com.iandonaldson.data.Customer;
-import com.iandonaldson.data.CustomerDaoImpl;
+import java.io.IOException;
 
 /**
  * Servlet implementation class WebCustomer
@@ -55,9 +54,7 @@ public class WebCustomer extends HttpServlet {
 				customerID = Integer.parseInt(customerIDParam);
 				customer = customerDaoImpl.getCustomer(customerID);
 				request.getSession().setAttribute("id", Integer.toString(customerID));
-				request.getSession().setAttribute("firstName", customer.getFirstName());
-				request.getSession().setAttribute("lastName", customer.getLastName());
-				request.getSession().setAttribute("email", customer.getEmail());
+				request.getSession().setAttribute("customer", customerDaoImpl.getCustomer(customerID));
 				request.getRequestDispatcher("Customer.jsp").forward(request, response);
 				break;
 			case "manageCustomers":

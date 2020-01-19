@@ -1,20 +1,20 @@
 package com.iandonaldson.data;
 
+import com.mysql.jdbc.Driver;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import com.mysql.jdbc.Driver;
-
 public class ConnectionFactory {
 
-    
+
 
 public static final String URL = "jdbc:mysql://localhost:3306/sakila";
 
-public static final String USER = "dragomundoh";
+public static final String USER = "testuser";
 
-public static final String PASS = "Kstujdfw34hgacvmaste";
+public static final String PASS = "testpass";
 
 
 
