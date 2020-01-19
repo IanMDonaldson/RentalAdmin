@@ -324,7 +324,7 @@
       <workItem from="1578525897751" duration="26169000" />
       <workItem from="1578961015058" duration="22334000" />
       <workItem from="1579051695772" duration="9684000" />
-      <workItem from="1579145351358" duration="14059000" />
+      <workItem from="1579145351358" duration="14404000" />
     </task>
     <task id="LOCAL-00001" summary="Finally working with Intellij">
       <created>1578527908961</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578527908961</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Film add almost complete except for inserting the releaseYear(java automatically tacks on 01-01 to the release year leaving a  &quot;truncated for column&quot; error&#10;also associateFilmToActors is working as is but is not where it needs to be, it currently saves the selected actors into a JS array &quot;actors&quot; and when submitted it pushes the data onto a hidden input &quot;hiddenactors&quot; which is then grabbed by the servlet. I'd like it to directly manipulate the assocActors and nonassocActors so it can grab it as a linked list">
+      <created>1579467060305</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579467060305</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +348,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finally working with Intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally working with Intellij" />
+    <MESSAGE value="Film add almost complete except for inserting the releaseYear(java automatically tacks on 01-01 to the release year leaving a  &quot;truncated for column&quot; error&#10;also associateFilmToActors is working as is but is not where it needs to be, it currently saves the selected actors into a JS array &quot;actors&quot; and when submitted it pushes the data onto a hidden input &quot;hiddenactors&quot; which is then grabbed by the servlet. I'd like it to directly manipulate the assocActors and nonassocActors so it can grab it as a linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Film add almost complete except for inserting the releaseYear(java automatically tacks on 01-01 to the release year leaving a  &quot;truncated for column&quot; error&#10;also associateFilmToActors is working as is but is not where it needs to be, it currently saves the selected actors into a JS array &quot;actors&quot; and when submitted it pushes the data onto a hidden input &quot;hiddenactors&quot; which is then grabbed by the servlet. I'd like it to directly manipulate the assocActors and nonassocActors so it can grab it as a linked list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="37" y="56" width="875" height="951" key="#MenuBar.jsp" timestamp="1578451611709">
@@ -384,10 +392,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="550" y="228" width="786" height="342" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080@0.0.1920.1080" timestamp="1578781019357" />
-    <state x="-4" y="40" width="1914" height="934" key="CommitChangelistDialog2" timestamp="1578527908749">
+    <state x="-6" y="16" width="1914" height="934" key="CommitChangelistDialog2" timestamp="1579467060075">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-4" y="40" width="1914" height="934" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1578527908749" />
+    <state x="-6" y="16" width="1914" height="934" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579467060075" />
     <state width="569" height="585" key="DebuggerActiveHint" timestamp="1578451809651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -544,10 +552,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="368" y="21" width="1180" height="1025" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579064936050" />
-    <state x="-4" y="182" width="1004" height="650" key="Vcs.Push.Dialog.v2" timestamp="1578527922308">
+    <state x="-6" y="158" width="1004" height="650" key="Vcs.Push.Dialog.v2" timestamp="1579467069791">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="-4" y="182" width="1004" height="650" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1578527922308" />
+    <state x="-6" y="158" width="1004" height="650" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579467069791" />
     <state width="960" height="522" key="XDebugger.FullValuePopup" timestamp="1578463150681">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
