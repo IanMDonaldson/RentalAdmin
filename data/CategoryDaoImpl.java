@@ -14,7 +14,7 @@ public class CategoryDaoImpl implements CategoryDao {
 		Category category = new Category();
 		Connection conn = ConnectionFactory.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("select category.category_id,category.name,category.last_update\n" + 
+			PreparedStatement ps = conn.prepareStatement("select category.category_id,category.name " +
 					"from category left join film_category on category.category_id = film_category.category_id\n" + 
 					"where film_category.film_id = ?;");
 			ps.setInt(1, film.getId());
@@ -22,7 +22,6 @@ public class CategoryDaoImpl implements CategoryDao {
 			if (rs.next()) {
 				category.setCategoryID(rs.getInt("category_id"));
 				category.setName(rs.getString("name"));
-				category.setLastUpdate(rs.getDate("last_update"));
 			}
 			else {
 				conn.close();

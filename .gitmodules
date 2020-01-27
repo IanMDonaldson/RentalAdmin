@@ -1,0 +1,6 @@
+[submodule "Data"]
+	path = Data
+	url = https://github.com/IanMDonaldson/Data.git
+[submodule "src/com/iandonaldson/data"]
+	path = src/com/iandonaldson/data
+	url = https://github.com/IanMDonaldson/Data.git
